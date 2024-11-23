@@ -1,6 +1,6 @@
 # PowerShell
-./PowerShell/.idea/*
+/PowerShell/.idea/*
 
 # Rust
-./Rust/.idea/*
-./Rust/target/*
+/Rust/.idea/*
+/Rust/target/*

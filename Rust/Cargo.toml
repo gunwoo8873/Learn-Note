@@ -1,0 +1,61 @@
+[package]
+name = "Rust-Learn"
+version = "0.1.0"
+authors = ["choigunwoo <gunwoo8873@outlook.kr"]
+edition = "2021"
+
+[dependencies]
+rand = {version = "0.8.5"}
+fs = {version = "0.0.5"}
+
+[[bin]]
+name = "datatype"
+path = "src/bin/2_datatype.rs"
+
+[[bin]]
+name = "operator"
+path = "src/bin/3_operator.rs"
+
+[[bin]]
+name = "function"
+path = "src/bin/4_function.rs"
+
+[[bin]]
+name = "branches"
+path = "src/bin/5_branches.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/bin/6_ownership.rs"
+
+[[bin]]
+name = "variable"
+path = "src/bin/1_variables.rs"
+
+[[bin]]
+name = "thread"
+path = "src/bin/7_thread.rs"
+
+[[bin]]
+name = "method"
+path = "src/bin/8_method.rs"
+
+[[bin]]
+name = "option"
+path = "src/bin/9_Options.rs"
+
+[[bin]]
+name = "module"
+path = "src/bin/10_Create_module.rs"
+
+[[bin]]
+name = "collection"
+path = "src/bin/11_Collection.rs"
+
+[[bin]]
+name = "panic"
+path = "src/bin/12_Panic.rs"
+
+[[bin]]
+name = "generic"
+path = "src/bin/13_Generic.rs"
