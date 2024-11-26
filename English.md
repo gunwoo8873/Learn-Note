@@ -29,3 +29,9 @@ LGTM = Looks Good To Me
 ```
 > [1. LGTM](https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS3858769941)  
 > [2. Slang](https://inpa.tistory.com/entry/IT-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0-%ED%83%9C%EA%B7%B8-LGTM-%EC%9D%B4%EB%9E%80)
+
+### ETC
+* `~`는  Tilde
+* `extension`는 확장자
+* `OS` 명칭을 사용할 경우 앞에 **전치사** `on`을 사용한다.
+* `accepts`는 동사로 받아들이다, 수락하다 등 사용
