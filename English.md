@@ -30,8 +30,58 @@ LGTM = Looks Good To Me
 > [1. LGTM](https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS3858769941)  
 > [2. Slang](https://inpa.tistory.com/entry/IT-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0-%ED%83%9C%EA%B7%B8-LGTM-%EC%9D%B4%EB%9E%80)
 
+
+## 2. Branch, File, Commits [24. 11. 28]
+```md
+The latest Commits on the base branch include a wrong API Call.
+```
+
+```md
+Verb[동사] + Adverb[부사] or Preposition[전치사] = Phrasal verb[구동사]
+```
+
+```md
+Boot up : 부팅하다.
+Hook up : 선을 연결하다.
+Pull Down : 선택하다.
+Key in : 입력하다.
+Look over : 살펴보다 / Run Through [유의어]
+Go over : 자세히 보다.
+Go offline / online : 오프라인 / 온라인 상태가 되다.
+Ask for : 요청하다, 찾다
+```
+
+## 3. IT 용어 [24. 11. 28]
+```md
+integer [int] : 정수
+Signed : Signed Integer [부호가 있다.] / unsigned : Unsigned Integer [부호가 없다.]
+Float [float] : 실수 [부동소수점]
+Character [char] : 문자
+Boolean [bool] : 불린
+Null : 널
+Constant : 상수
+Initialize a variable : 변수를 초기화 하다.
+```
+
+```md
+Loop Statement : 반복문
+Local Variable : 지역 변수 / Global Constant 전역 상수
+Conditional Statement : 조건문
+Ingeritance : 상속
+Function Call : 함수 호출
+Object-oriented : 객체 지향 [Hyphenate]
+Command : 명령어
+Parameter : 매개 변수
+Asynchronous : 비동기적인
+Argumnet : 인자
+Regular Expression [Reg Ex] : 정규식
+```
+
 ### ETC
-* `~`는  Tilde
+* `~`는 Tilde
 * `extension`는 확장자
 * `OS` 명칭을 사용할 경우 앞에 **전치사** `on`을 사용한다.
-* `accepts`는 동사로 받아들이다, 수락하다 등 사용
+* `accepts`는 동사로 받아들이다, 수락하다 등 사용한다.
+* `branch`는 **into** 를 사용한다.
+* `File`내의 Code에 대한 문법이면 **in**을 사용한다.
+* `-`는 두 개의 단어를 연결시켜 새로운 의미를 만드는 것을 **Hyphenate**라고 칭한다.
