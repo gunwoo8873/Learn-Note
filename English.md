@@ -51,8 +51,9 @@ Go offline / online : 오프라인 / 온라인 상태가 되다.
 Ask for : 요청하다, 찾다
 ```
 
-## 3. IT 용어 [24. 11. 28]
+## 3. Programing 용어 [24. 11. 28]
 ```md
+# 자료형
 integer [int] : 정수
 Signed : Signed Integer [부호가 있다.] / unsigned : Unsigned Integer [부호가 없다.]
 Float [float] : 실수 [부동소수점]
@@ -64,6 +65,7 @@ Initialize a variable : 변수를 초기화 하다.
 ```
 
 ```md
+# Programing
 Loop Statement : 반복문
 Local Variable : 지역 변수 / Global Constant 전역 상수
 Conditional Statement : 조건문
@@ -75,6 +77,37 @@ Parameter : 매개 변수
 Asynchronous : 비동기적인
 Argumnet : 인자
 Regular Expression [Reg Ex] : 정규식
+```
+
+```md
+# Programing
+Syntax : 구문
+Declaration : 선언
+Recursive Function : 재귀 함수
+Nested : 중첩된
+Error Handling : 예외 처리
+Indentation : 들여쓰기
+Iteration : 반복
+Immutable / Mutable : 불변의 / 가변의
+Operator : 연산자
+Security Vulnerability : 보안 취약점
+Abstraction : 추상화
+Static / Dynamic : 정적인 / 동적인
+```
+
+```md
+# Ground Field
+Front-end : 프론트엔드 [Hyphenate]
+Back-end : 백엔드 [Hyphenate]
+DevOps : 데브옵스
+Pull Request [PR] : 풀 리퀘스트
+On-Premises : 온-프레미스 [Hyphenate]
+SaaS : Software as a Service
+GUI : Graphic User Interface
+WYSIWYG : What you See is What you Get
+JSON : JavaScript Object Notation
+CRUD : Create, Read, Update, Delete
+MVC : Model, View, Controller
 ```
 
 ### ETC
