@@ -21,8 +21,8 @@ name = "function"
 path = "src/bin/4_function.rs"
 
 [[bin]]
-name = "branches"
-path = "src/bin/5_branches.rs"
+name = "statement"
+path = "src/bin/5_Statement.rs"
 
 [[bin]]
 name = "ownership"
