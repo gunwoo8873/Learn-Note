@@ -14,3 +14,17 @@
 
     _ { } [ ] # ( ) < > % : ; . ? * + - / ^ & | ~ ! = , \ " '
     ```
+
+  * Data type list
+    ```txt
+    alignas, alignof, and, and_eq, asm, auto, bitand, bitor, bool, break, case, catch, char, char16_t, char32_t, class, compl, const, constexpr, const_cast, continue, decltype, default, delete, do, double, dynamic_cast, else, enum, explicit, export, extern, false, float, for, friend, goto, if, inline, int, long, mutable, namespace, new, noexcept, not, not_eq, nullptr, operator, or, or_eq, private, protected, public, register, reinterpret_cast, return, short, signed, sizeof, static, static_assert, static_cast, struct, switch, template, this, thread_local, throw, true, try, typedef, typeid, typename, union, unsigned, using, virtual, void, volatile, wchar_t, while, xor, xor_eq
+    ```
+    > 이 미친 데이터 타입과 연산자를 보면 Low level System Programing Language인 Rust와 굉장히 경악할 정도로 대조된다.
+
+  * Data type Size
+    | Type       | Byte  | Size                                                   |
+    | :--------- | :---: | :----------------------------------------------------- |
+    | char       |   1   | -128 ~ 127                                             |
+    | short      |   2   | -32,768 ~ 32,767                                       |
+    | int / long |   4   | -2,147,483,648 ~ 2,147,483,647                         |
+    | long long  |   8   | -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 |
