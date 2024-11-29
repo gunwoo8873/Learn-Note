@@ -110,8 +110,40 @@ CRUD : Create, Read, Update, Delete
 MVC : Model, View, Controller
 ```
 
+## 3. Special Characters [24. 11. 29]
+
+```txt
+() / (()) : Parenthesis [단괄호] / Parentheses [양괄호]
+[]  : Brackets [Square Brackets]
+{}  : Braces [Curly Brackets]
+<>  : Angle Brackets [Chevrons]
+<.. : Opening Angle Brackets
+..> : Closing Angle Brackets
+#   : Number Sign [Hash]
+@   : At Sign
+!   : Excalmation Mark
+%   : Percent Sign
+*   : Asterisk [Star]
+^   : Caret
+$   : Dollar Sign
+?   : Question Mark
+: / ; : Colon / Semi Colon
+-   : Hyphen [Dash]
+_   : Underscore
++   : Plus Sign
+=   : Equal Sign
+\   : Backslash
+/   : Forward Slash
+`   : Backtick [Grave Accent]
+" " / ' ' : Double Quotation Marks / Signle Quotation Marks
+,   : Comma
+.   : Dot [Period]
+|   : Pipe [Vertical Bar]
+&   : And Sign [Ampersand]
+~   : Tilde
+```
+
 ### ETC
-* `~`는 Tilde
 * `extension`는 확장자
 * `OS` 명칭을 사용할 경우 앞에 **전치사** `on`을 사용한다.
 * `accepts`는 동사로 받아들이다, 수락하다 등 사용한다.
