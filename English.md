@@ -110,8 +110,7 @@ CRUD : Create, Read, Update, Delete
 MVC : Model, View, Controller
 ```
 
-## 3. Special Characters [24. 11. 29]
-
+## 4. Special Characters [24. 11. 29]
 ```txt
 () / (()) : Parenthesis [단괄호] / Parentheses [양괄호]
 []  : Brackets [Square Brackets]
