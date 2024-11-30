@@ -11,7 +11,7 @@ int main()
   cout << a + b << endl;
 
   // Panic Code
-  cout << ("Test Code"/125) << endl; // The Datatype of String and Int is Comfile to Panic Code
+  cout << ("Test Code"/125) << endl; // The Datatype Not Equal of String and Int is Panic code to Comfile error
 
   return 0;
 }
