@@ -12,7 +12,7 @@ function Terminal_Profile
 #                 Add content to be added to the file to be created.
 #        -foregroundcolor : Text Color를 Green으로 지정한다.
 #        -Path  : 파일이 생성할 경로를 지정하여 [$Profile.CurrentUserCurrentHost]은 Powershell의 기본 프로필이다.
-#        -Force : 이미 존재하는 파일이 있을 경우 Override[덮어쓰기]를 한다. = << 와 비슷한 개념?
+#        -Force : 이미 존재하는 파일이 있을 경우 Override[덮어쓰기]를 한다. << 와 비슷한 개념?
 # Waring : [`]가 있는 라인은 Comment를 작성을 하게되면 오류가 생길수 있으니 같은 라인에 작성을 권장하지 않는다.
 #          이 스크립트를 실행하게 되면 Powershell의 Profile에 등록되는 경우가 발생할 수 있으니 주의
 #          C:\Users\<Username>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
