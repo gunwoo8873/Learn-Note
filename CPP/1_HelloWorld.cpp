@@ -9,6 +9,10 @@ int main()
 
   int a = 15, b = 20, c(30);
   cout << a + b << endl;
+
+  // Panic Code
+  cout << ("Test Code"/125) << endl; // The Datatype of String and Int is Comfile to Panic Code
+
   return 0;
 }
 // Result : [Thread 5376.0x28ec exited with code 0] / Hello World, 35
