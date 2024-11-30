@@ -29,3 +29,8 @@
     | short         |   2   | -32,768 ~ 32,767                                       |
     | int / long    |   4   | -2,147,483,648 ~ 2,147,483,647                         |
     | long long     |   8   | -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 |
+
+
+## ETC
+* Algorithm : 문제를 해결하기 위한 일련의 정확한 단계를 의미, 계산 수행, 데이터 처리, 자동 추론 등 다양한 작업에 사용
+* C++ Keywords : [CppReference](https://en.cppreference.com/w/cpp/keyword)
