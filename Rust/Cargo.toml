@@ -5,8 +5,6 @@ authors = ["choigunwoo <gunwoo8873@outlook.kr"]
 edition = "2021"
 
 [dependencies]
-rand = {version = "0.8.5"}
-fs = {version = "0.0.5"}
 
 [[bin]]
 name = "datatype"
