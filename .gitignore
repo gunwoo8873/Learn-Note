@@ -1,5 +1,6 @@
 # Root
 .vscode
+.idea
 
 # CPP
 /CPP/*.exe
