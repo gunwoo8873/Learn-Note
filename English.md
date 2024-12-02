@@ -149,3 +149,4 @@ _   : Underscore
 * `branch`는 **into** 를 사용한다.
 * `File`내의 Code에 대한 문법이면 **in**을 사용한다.
 * `-`는 두 개의 단어를 연결시켜 새로운 의미를 만드는 것을 **Hyphenate**라고 칭한다.
+* `Object-Oriented Programming / OOP`는 객체 지향 프로그래밍 이다.
