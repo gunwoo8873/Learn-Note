@@ -38,3 +38,11 @@ using은 식별자들이 사용되고 효율성을 위해서 몇 개의 영역�
     | short         |   2   | -32,768 ~ 32,767                                       |
     | int / long    |   4   | -2,147,483,648 ~ 2,147,483,647                         |
     | long long     |   8   | -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807 |
+    | float         |   4   | 1.2E-38 ~ 3.4E38                                       |
+    | double        |   8   | 2.2E-308 ~ 1.8E308                                     |
+    | unsgined      |   -   | -                                                      |
+    | un short      |   2   | 0 ~ 65535                                              |
+    | un int / long |   4   | 0 ~ 4294967295                                         |
+
+## ETC
+* C++ Keywords : [CppReference](https://en.cppreference.com/w/cpp/keyword)
