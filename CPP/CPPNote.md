@@ -43,4 +43,3 @@ Low Level Class 부터 High Level Class 설계 까지 진행하는 방법을 Bot
 
 ## ETC
 * Algorithm : 문제를 해결하기 위한 일련의 정확한 단계를 의미, 계산 수행, 데이터 처리, 자동 추론 등 다양한 작업에 사용
-* C++ Keywords : [CppReference](https://en.cppreference.com/w/cpp/keyword)
