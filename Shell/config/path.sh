@@ -1,2 +1,2 @@
-MAIN="../main.sh"
-WHELCOME_MSG="../whelcome.sh"
+DEFAULT_MAIN="../main.sh"
+DEFAULT_WHELCOME_MSG="../whelcome.sh"

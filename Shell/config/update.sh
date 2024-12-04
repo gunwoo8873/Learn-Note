@@ -2,9 +2,6 @@
 
 set -e
 
-
-
-
 function update_menu()
 {
   options=("Update" "Exit")
