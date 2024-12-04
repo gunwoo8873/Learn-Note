@@ -44,8 +44,15 @@ void float_type()
   cout << "double Size : " << sizeof(b) << " Double Result : " << b << endl; // Result : 8
 }
 
+void unsigned_type()
+{
+  unsigned int a;
+  unsigned long b;
+  unsigned long long c;
+}
+
 // Note : sizeof 연산자를 사용하여 각 데이터 타입들의 Size 확인이 가능하다. 
-//        자료형이나 변수의 Size를 Byte 단위로 계산하는 연산자다.
+//        자료형이나 변수의 Size를 Byte 단위로 계산하는 연산자다. cout는 출력의 시작 이라면 endl는 끝이자 줄바꿈을 맡고 있다.
 
 int main()
 {
