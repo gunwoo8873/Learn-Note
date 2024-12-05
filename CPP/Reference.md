@@ -44,5 +44,20 @@ using은 식별자들이 사용되고 효율성을 위해서 몇 개의 영역�
     | un short      |   2   | 0 ~ 65535                                              |
     | un int / long |   4   | 0 ~ 4294967295                                         |
 
+## Escape
+|          Name          |       |       | Discription |
+| :--------------------: | :---: | :---: | ----------- |
+|          Null          |  \0   |   0   |             |
+|          Bell          |  \a   |   7   | Sound Call  |
+|       BackSpace        |  \b   |   8   |             |
+|     Horizental tab     |  \t   |   9   |             |
+|        Newline         |  \n   |  10   |             |
+|      Vertical tab      |  \v   |  11   |             |
+|       Torm feed        |  \f   |  12   |             |
+|    Carriage Return     |  \r   |  13   |             |
+| Double Quotation Marks |  \""  |  34   |             |
+| Signle Quotation Marks |  \''  |  39   |             |
+|       Back Slash       |  \\   |  92   |             |
+
 ## ETC
 * C++ Keywords : [CppReference](https://en.cppreference.com/w/cpp/keyword)
