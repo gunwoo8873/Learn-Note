@@ -25,22 +25,10 @@ void radix()
   int hexadecimal = 0x2A; // 16 base
   cout << "Hexadecimal : " << hexadecimal << endl;
 }
-
-#define TAX_RATE 0.15
-// Note : define은 컴파일러가 수행하기 전 Preprocess-sor[전처리기]가 처리한다.
-
-void define()
-{
-  double m_salary, y_salary;
-  cin >> m_salary;
-
-  y_salary = m_salary * (1 + TAX_RATE);
-  cout << "Monthly Salary : " << y_salary << endl;
-}
+// Note : 각 진수에 형태로 코드를 작성을 하더라도 컴파일 단계에서 10 진수로 변환하여 출력한다.
 
 int main()
 {
   overflow();
   radix();
-  define();
 }
