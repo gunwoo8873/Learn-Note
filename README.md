@@ -3,12 +3,12 @@
 ## 1. Object
 | N    | Name              | Chapter    | Update     |
 | :--- | :---------------- | :--------- | ---------- |
-| 1    | EN                | -          | 24. 12. 04 |
+| 1    | EN                | -          | 24. 12. 05 |
 | 2    | Batch             | -          | 24. 12. 04 |
 | 3    | PowerShell [Stop] | -          | 24. 11. 23 |
 | 4    | Shell             | -          | 24. 11. 28 |
 | 5    | Rust [Stop]       | Collection | 24. 11. 23 |
-| 6    | C++               | Data type  | 24. 12. 04 |
+| 6    | C++               | Data type  | 24. 12. 05 |
 | 7    | Conference        | -          | 24. 12. 03 |
 
 ## 2. Issue
