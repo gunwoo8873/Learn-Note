@@ -6,7 +6,7 @@
 /CPP/*.exe
 
 # PowerShell
-/PowerShell/.idea/*
+/PowerShell/File/*.txt
 
 # Rust
 /Rust/target/*
