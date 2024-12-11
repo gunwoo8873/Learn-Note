@@ -1,59 +1,61 @@
 [package]
-name = "Rust-Learn"
+name = "Rust"
 version = "0.1.0"
-authors = ["choigunwoo <gunwoo8873@outlook.kr"]
-edition = "2021"
+edition = "2024"
 
 [dependencies]
+[[bin]]
+name = "Variable"
+path = "./src/bin/Variable.rs"
 
 [[bin]]
 name = "datatype"
-path = "src/bin/2_datatype.rs"
+path = "./src/bin/2_datatype.rs"
 
 [[bin]]
 name = "operator"
-path = "src/bin/3_operator.rs"
+path = "./src/bin/3_operator.rs"
 
 [[bin]]
 name = "function"
-path = "src/bin/4_function.rs"
+path = "./src/bin/4_function.rs"
 
 [[bin]]
 name = "statement"
-path = "src/bin/5_Statement.rs"
+path = "./src/bin/5_Statement.rs"
 
 [[bin]]
 name = "ownership"
-path = "src/bin/6_ownership.rs"
-
-[[bin]]
-name = "variable"
-path = "src/bin/1_variables.rs"
+path = "./src/bin/6_ownership.rs"
 
 [[bin]]
 name = "thread"
-path = "src/bin/7_thread.rs"
+path = "./src/bin/7_thread.rs"
 
 [[bin]]
 name = "method"
-path = "src/bin/8_method.rs"
+path = "./src/bin/8_method.rs"
 
 [[bin]]
 name = "option"
-path = "src/bin/9_Options.rs"
+path = "./src/bin/9_Options.rs"
 
 [[bin]]
 name = "module"
-path = "src/bin/10_Create_module.rs"
+path = "./src/bin/10_Create_module.rs"
 
 [[bin]]
 name = "collection"
-path = "src/bin/11_Collection.rs"
+path = "./src/bin/11_Collection.rs"
 
 [[bin]]
 name = "panic"
-path = "src/bin/12_Panic.rs"
+path = "./src/bin/12_Panic.rs"
 
 [[bin]]
 name = "generic"
-path = "src/bin/13_Generic.rs"
+path = "./src/bin/13_Generic.rs"
+
+[[bin]]
+name = "Thread"
+path = "./src/bin/Thread.rs"
