@@ -2,11 +2,16 @@
 .vscode
 .idea
 
-# CPP
+# C#
+/C#/bin
+/C#/obj
+/C#/*.csproj
+
+# C++
 /CPP/*.exe
 
 # PowerShell
 /PowerShell/File/*.txt
 
 # Rust
-/Rust/target/*
+/Rust/target
