@@ -13,5 +13,7 @@
 # PowerShell
 /PowerShell/File/*.txt
 
+# Go
+
 # Rust
 /Rust/target
