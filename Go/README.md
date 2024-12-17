@@ -2,11 +2,11 @@
 > 각 하단 아래에 Comment 형식으로 요약문 작성
 * Manual
     ```bash
-    go run [Filename.go]
+    go run [Path/Filename.go] or go run main.go
     ```
 
 ## Bin Name list
 | Name           | Update Date |
-|----------------|-------------|
-| 1. variable    | 24. 11. 13  |
+| -------------- | ----------- |
+| 1. Hello World | 24. 12. 17  |
 
