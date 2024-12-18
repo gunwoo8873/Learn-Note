@@ -1,4 +1,3 @@
-use std::sync::Mutex;
 use std::thread;
 
 fn main()
@@ -77,7 +76,7 @@ fn scope()
   });
 }
 
-use std::{time::Duration, collections::VecDeque};
+use std::{sync::Mutex, time::Duration, collections::VecDeque};
 
 fn parking()
 {
