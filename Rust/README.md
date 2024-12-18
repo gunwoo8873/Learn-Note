@@ -6,19 +6,17 @@
     cargo run --bin [bin_name]
     ```
 # Bin Name list
-| Name           | Update Date |
-|----------------|-------------|
-| 1. variable    | 24. 11. 13  |
-| 2. datatype    | 24. 11. 31  |
-| 3. operator    | 24. 11. 15  |
-| 4. function    | 24. 11. 15  |
-| 5. branches    | 24. 11. 15  |
-| 6. ownership   | 24. 11. 13  |
-| 7. thread      | 24. 11. 06  |
-| 8. method      | 24. 11. 14  |
-| 9. options     | 24. 11. 15  |
-| 10. module     | 24. 11. 15  |
-| 11. collection | 24. 11. 16  |
+| Name          | Update Date |
+| ------------- | ----------- |
+| 1. Variable   | 24. 11. 13  |
+| 2. Datatype   | 24. 11. 31  |
+| 3. Operator   | 24. 11. 15  |
+| 4. Statement  | 24. 11. 15  |
+| 5. Ownership  | 24. 11. 13  |
+| 6. Thread     | 24. 11. 06  |
+| 7. Method     | 24. 11. 14  |
+| 8. Options    | 24. 11. 15  |
+| 9. Collection | 24. 11. 16  |
 
 # Build Check
 ```bash
@@ -48,6 +46,6 @@ cargo +nightly test
 
 # Crate Lib Version Check
 | Operator | EX      | Min      | Max     | Update Check |
-|----------|---------|----------|---------|--------------|
-| ^        | ^ 1.1.0 | >= 1.1.0 | < 2.0.0 | Yes          | 
+| -------- | ------- | -------- | ------- | ------------ |
+| ^        | ^ 1.1.0 | >= 1.1.0 | < 2.0.0 | Yes          |
 | ~        | ~ 1.2.3 | >= 1.2.3 | < 1.3.0 | Yes          |
