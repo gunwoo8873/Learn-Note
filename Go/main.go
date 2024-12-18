@@ -4,6 +4,7 @@ package main
 // Import to Package list and Module name is file name
 import (
 	"lib/config"
+	"lib/error"
 	"lib/stream"
 )
 
@@ -14,4 +15,6 @@ func main() {
 
 	result := stream.Send()
 	println(result)
+
+	error.Error()
 }

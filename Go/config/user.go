@@ -22,5 +22,9 @@ func NewUser(name string, class string, userid string, userpassword string, user
 }
 
 func (u User) Userinfo() {
-	fmt.Println(u.Name, u.Class, u.Userid, u.UserPassword, u.UserEmail)
+	fmt.Println(u.Name, len(u.Name))
+	fmt.Println(u.Class, len(u.Class))
+	fmt.Println(u.Userid, len(u.Userid))
+	fmt.Println(u.UserPassword, len(u.UserPassword))
+	fmt.Println(u.UserEmail, len(u.UserEmail))
 }
