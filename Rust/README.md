@@ -34,7 +34,7 @@ time cargo check
 ```
 
 # Toolchain Change
-> Rust Toolchain 중 Stable, Beta, Nightly 가 설치되어 있어야 한다.
+> Rust Toolchain for Stable, Beta, Nightly to need Installed
 
 ```bash
 cargo +[version] test
