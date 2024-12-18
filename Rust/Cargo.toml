@@ -5,28 +5,12 @@ edition = "2024"
 
 [dependencies]
 [[bin]]
-name = "Variable"
-path = "./src/bin/Variable.rs"
-
-[[bin]]
 name = "datatype"
 path = "./src/bin/2_datatype.rs"
 
 [[bin]]
 name = "operator"
 path = "./src/bin/3_operator.rs"
-
-[[bin]]
-name = "function"
-path = "./src/bin/4_function.rs"
-
-[[bin]]
-name = "statement"
-path = "./src/bin/5_Statement.rs"
-
-[[bin]]
-name = "ownership"
-path = "./src/bin/Ownership.rs"
 
 [[bin]]
 name = "thread"
@@ -41,21 +25,25 @@ name = "option"
 path = "./src/bin/9_Options.rs"
 
 [[bin]]
-name = "module"
-path = "./src/bin/10_Create_module.rs"
-
-[[bin]]
 name = "collection"
 path = "./src/bin/11_Collection.rs"
 
 [[bin]]
 name = "panic"
-path = "./src/bin/12_Panic.rs"
+path = "./src/bin/Panic.rs"
 
 [[bin]]
-name = "generic"
-path = "./src/bin/13_Generic.rs"
+name = "Variable"
+path = "./src/bin/Variable.rs"
+
+[[bin]]
+name = "statement"
+path = "./src/bin/Statement.rs"
 
 [[bin]]
 name = "Thread"
 path = "./src/bin/Thread.rs"
+
+[[bin]]
+name = "ownership"
+path = "./src/bin/Ownership.rs"
