@@ -26,7 +26,7 @@ path = "./src/bin/5_Statement.rs"
 
 [[bin]]
 name = "ownership"
-path = "./src/bin/6_ownership.rs"
+path = "./src/bin/Ownership.rs"
 
 [[bin]]
 name = "thread"
