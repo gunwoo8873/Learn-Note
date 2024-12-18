@@ -1,3 +1,4 @@
+use std::sync::Mutex;
 use std::thread;
 
 fn main()
@@ -10,8 +11,9 @@ fn main()
   join();
   closure();
   scope();
+  parking();
+  condition()
 }
-
 fn output()
 {
   println!("Another Thread");
@@ -72,6 +74,68 @@ fn scope()
         println!("{}", i);
       }
     });
+  });
+}
 
+use std::{time::Duration, collections::VecDeque};
+
+fn parking()
+{
+  let queue = Mutex::new(VecDeque::new());
+  thread::scope(|s| {
+    let t = s.spawn(|| loop {
+      let item = queue.lock().unwrap().pop_front();
+      
+      if let Some(item) = item
+      {
+        dbg!(item);
+      }
+      else
+      {
+        thread::park(); // Fake Function return to Thread
+      }
+    });
+    
+    for i in 0..
+    {
+      queue.lock().unwrap().push_back(i);
+      t.thread().unpark();
+      thread::sleep(Duration::from_millis(100));
+    }
+  });
+}
+
+use std::sync::Condvar;
+
+fn condition()
+{
+  let queue = Mutex::new(VecDeque::new());
+  let not_empty = Condvar::new();
+
+  thread::scope(|s| {
+    s.spawn(|| loop {
+      let mut queue = queue.lock().unwrap();
+      let item = loop
+      {
+        if let Some(item) = queue.pop_front()
+        {
+          break item;
+        }
+        else
+        {
+          queue = not_empty.wait(queue).unwrap();
+        }
+      };
+
+      drop(queue);
+      dbg!(item);
+    });
+
+    for i in 0..
+    {
+      queue.lock().unwrap().push_back(i);
+      not_empty.notify_one();
+      thread::sleep(Duration::from_millis(100));
+    }
   });
 }
