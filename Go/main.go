@@ -3,18 +3,18 @@ package main
 
 // Import to Package list and Module name is file name
 import (
-	"lib/config"
-	"lib/error"
-	"lib/stream"
+	"creat/bin/array"
+	"creat/bin/defined"
+	"fmt"
 )
 
 // Module file in the func name is function call
 func main() {
-	user := config.NewUser("Lee", "Warrior", "asd", "asd1234", "Lee@google.com")
-	user.Userinfo()
+	array.Array()
+	array.Slice()
+	array.Map()
 
-	result := stream.Send()
-	println(result)
+	defined.BindStructField()
 
-	error.Error()
+	fmt.Println("Hello World")
 }
