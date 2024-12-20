@@ -3,12 +3,12 @@
 ## 1. Object
 | N    | Name                 | Chapter     | Update     |
 | :--- | :------------------- | :---------- | ---------- |
-| 1    | Rust                 | Collection  | 24. 12. 19 |
-| 2    | Go                   | -           | 24. 12. 19 |
+| 1    | Rust                 | Collection  | 24. 12. 20 |
+| 2    | Go                   | -           | 24. 12. 20 |
 | 3    | C++                  | Data type   | 24. 12. 05 |
 | 4    | C#                   | -           | 24. 12. 14 |
 | 5    | EN                   | -           | 24. 12. 05 |
-| 6    | QA Test              | Agile       | 24. 12. 12 |
+| 6    | QA Test              | Agile       | 24. 12. 20 |
 | 7    | Batch [Stop]         | -           | 24. 12. 04 |
 | 8    | PowerShell [Stop]    | -           | 24. 11. 23 |
 | 9    | Shell [Stop]         | -           | 24. 11. 28 |
