@@ -5,35 +5,23 @@ edition = "2024"
 
 [dependencies]
 [[bin]]
-name = "datatype"
-path = "./src/bin/2_datatype.rs"
-
-[[bin]]
-name = "operator"
-path = "./src/bin/3_operator.rs"
-
-[[bin]]
 name = "thread"
 path = "./src/bin/7_thread.rs"
 
 [[bin]]
-name = "method"
-path = "./src/bin/8_method.rs"
-
-[[bin]]
 name = "option"
-path = "./src/bin/9_Options.rs"
+path = "./src/bin/Options.rs"
 
 [[bin]]
 name = "collection"
-path = "./src/bin/11_Collection.rs"
+path = "./src/bin/Collection.rs"
 
 [[bin]]
 name = "panic"
 path = "./src/bin/Panic.rs"
 
 [[bin]]
-name = "Variable"
+name = "variable"
 path = "./src/bin/Variable.rs"
 
 [[bin]]
