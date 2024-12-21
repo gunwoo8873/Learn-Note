@@ -4,6 +4,7 @@ package main
 // Import to Package list and Module name is file name
 import (
 	"creat/bin/array"
+	"creat/bin/control"
 	"creat/bin/defined"
 	"fmt"
 )
@@ -15,6 +16,10 @@ func main() {
 	array.Map()
 
 	defined.BindStructField()
+
+	control.Container()
+	control.Pointer()
+	control.Switch_Case()
 
 	fmt.Println("Hello World")
 }
