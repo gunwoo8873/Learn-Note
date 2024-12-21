@@ -38,20 +38,15 @@ fn const_variable() {
 
 
 fn shadow_variable() {
-    let shadow_number = 15;
-    let shadow_number = shadow_number + 20;
+    const SHADOW_NUMBER_A: i32 = 15;
+    const SHADOW_NUMBER_B: i32 = SHADOW_NUMBER_A + 20;
 
     {
-        let shadow_number = shadow_number * 2;
+        let shadow_number = SHADOW_NUMBER_B * 2;
         println!("{}", shadow_number);
     }
 
-    {
-        let shadow_number = "Shadow Datatype Changed i32 -> String";
-        println!("{}", shadow_number);
-    }
-
-    println!("{}", shadow_number);
+    println!("{}", SHADOW_NUMBER_B);
 }
 // Note : Shadow 는 let 의 mut 키워드를 사용하지 않고, 기존의 변수명을 사용이 가능하여 새로운 변수의 값을 저장이 가능하다.
 //        구분되는 변수명을 사용하지 않아도 되지만, mut 를 사용하게 되면 컴파일 에러가 발생
