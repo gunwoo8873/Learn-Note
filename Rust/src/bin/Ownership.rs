@@ -1,33 +1,21 @@
 use std::{thread::spawn, sync::Arc};
 
 fn main() {
-  main_ownership();
+  nomal_ref();
   static_ref();
   leaking();
   ref_counting();
-  variable_ref();
 }
 
-fn variable_ref() {
-  let a = 10;
-  let b = sub_variable_ref(a);
+fn nomal_ref() {
+  let x: i32 = 15;
+  let y: i32 = 20;
 
-  println!("{} + 10 = {}", a, b);
+  sub_ref(x, y);
 }
 
-fn sub_variable_ref(a: i32) -> i32 {
-  a + 10
-}
-
-fn main_ownership() {
-  let a: i32 = 15;
-  let b = 20;
-
-  sub_ownership_ref(&a, &b);
-}
-
-fn sub_ownership_ref(a: &i32, b: &i32) {
-  println!("{} + {} = {}", a, b, a + b);
+fn sub_ref(x: i32, y: i32) {
+  println!("{} + {} = {}", x, y, x + y);
 }
 
 fn static_ref() {
