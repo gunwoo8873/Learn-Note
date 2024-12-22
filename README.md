@@ -1,18 +1,18 @@
 # I`m Studying for Learning
 
 ## 1. Object
-| N    | Name                 | Chapter     | Update     |
-| :--- | :------------------- | :---------- | ---------- |
-| 1    | Rust                 | Collection  | 24. 12. 20 |
-| 2    | Go                   | -           | 24. 12. 20 |
-| 3    | C++                  | Data type   | 24. 12. 05 |
-| 4    | C#                   | -           | 24. 12. 14 |
-| 5    | EN                   | -           | 24. 12. 05 |
-| 6    | QA Test              | Agile       | 24. 12. 20 |
-| 7    | Batch [Stop]         | -           | 24. 12. 04 |
-| 8    | PowerShell [Stop]    | -           | 24. 11. 23 |
-| 9    | Shell [Stop]         | -           | 24. 11. 28 |
-| 10   | Certification [Stop] | AZ-104, 204 | 24. 12. 12 |
+| N    | Name                                     | Chapter     | Update     |
+| :--- | :--------------------------------------- | :---------- | ---------- |
+| 1    | [Rust](./Rust/)                          | Collection  | 24. 12. 22 |
+| 2    | [Go](./Go/)                              | -           | 24. 12. 22 |
+| 3    | [C++](./CPP/)                            | Data type   | 24. 12. 05 |
+| 4    | [C#](./C#/)                              | -           | 24. 12. 14 |
+| 5    | [EN](./English.md)                       | -           | 24. 12. 20 |
+| 6    | [QA Test](./QA-Engineer/)                | Agile       | 24. 12. 20 |
+| 7    | [Batch](./Batch/) [Stop]                 | -           | 24. 12. 04 |
+| 8    | [PowerShell](./PowerShell/) [Stop]       | -           | 24. 11. 23 |
+| 9    | [Shell](./Shell/) [Stop]                 | -           | 24. 11. 28 |
+| 10   | [Certification](./Certification/) [Stop] | AZ-104, 204 | 24. 12. 12 |
 
 ## 2. Issue
 * `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
