@@ -5,18 +5,24 @@
     cargo build
     cargo run --bin [bin_name]
     ```
+    ```bash
+    cargo test
+    ```
 # Bin Name list
-| Name          | Update Date |
-| ------------- | ----------- |
-| 1. Variable   | 24. 11. 13  |
-| 2. Datatype   | 24. 11. 31  |
-| 3. Operator   | 24. 11. 15  |
-| 4. Statement  | 24. 11. 15  |
-| 5. Ownership  | 24. 11. 13  |
-| 6. Thread     | 24. 11. 06  |
-| 7. Method     | 24. 11. 14  |
-| 8. Options    | 24. 11. 15  |
-| 9. Collection | 24. 11. 16  |
+| Name                                         | Update Date |
+| -------------------------------------------- | ----------- |
+| 1. [Variable](./src/bin/Variable.rs)         | 24. 12. 21  |
+| 2. [Control Flow](./src/bin/Control_Flow.rs) | 24. 12. 21  |
+| 3. [Ownership](./src/bin/Ownership.rs)       | 24. 12. 21  |
+| 4. [Thread](./src/bin/Thread.rs)             | 24. 12. 21  |
+| 5. [Options](./src/bin/Options.rs)           | 24. 12. 21  |
+| 6. [Collection](./src/bin/Options.rs)        | 24. 12. 21  |
+| 7. [Trait](./src/bin/Trait.rs)               | 24. 12. 22  |
+| 8. [Atomic](./src/bin/Atomic.rs)             | 24. 12. 21  |
+| 9. [Panic](./src/bin/Panic.rs)               | 24. 12. 21  |
+| 10. [Pattern](./src/bin/Pattern.rs)          | 24. 12. 21  |
+> Noti : Grap file CMD : cargo run --bin grap -- test sample.txt
+
 
 # Build Check
 ```bash
