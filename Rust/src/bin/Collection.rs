@@ -24,7 +24,7 @@ impl Collection {
         Collection::Str(String::new())
     }
 
-    fn hash_map() -> Self
+    fn hashmap() -> Self
     {
         Collection::HashMap(HashMap::new())
     }
@@ -56,7 +56,6 @@ fn get_vector() {
         println!("{}", i);
     }
 }
-// Note : vec!는 단순히 객체의 타입을 지정만 하는 것이 아닌 생성하는 것이기 때문에,
 
 fn get_string() {
     let mut str_a = Collection::string();
@@ -82,7 +81,7 @@ fn get_string() {
 //       bytes를 활용하여 각 문자열 값을 확인 하고자 유용하게 사용할 수 있을거라 생각한다.
 
 fn get_hash_map() {
-    let mut hash_a = Collection::hash_map();
+    let mut hash_a = Collection::hashmap();
     if let Collection::HashMap(hm) = &mut hash_a {
         hm.insert("HashMap_A".to_string(), 1);
         hm.insert("HashMap_B".to_string(), 2);
