@@ -5,10 +5,6 @@ edition = "2024"
 
 [dependencies]
 [[bin]]
-name = "thread"
-path = "./src/bin/7_thread.rs"
-
-[[bin]]
 name = "option"
 path = "./src/bin/Options.rs"
 
@@ -25,13 +21,17 @@ name = "variable"
 path = "./src/bin/Variable.rs"
 
 [[bin]]
-name = "statement"
-path = "./src/bin/Statement.rs"
+name = "controlflow"
+path = "./src/bin/Control_Flow.rs"
 
 [[bin]]
-name = "Thread"
+name = "Thread" # The Thread name is library name to don`t use the same name
 path = "./src/bin/Thread.rs"
 
 [[bin]]
 name = "ownership"
 path = "./src/bin/Ownership.rs"
+
+[[bin]]
+name = "grap"
+path = "./src/bin/Grap.rs"
