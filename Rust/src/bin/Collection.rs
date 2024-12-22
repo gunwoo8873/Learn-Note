@@ -1,22 +1,19 @@
-use std::collections::{HashMap};
+use std::collections::HashMap;
 
-fn main()
-{
+fn main() {
     get_vector();
     get_string();
     string_replace();
     get_hash_map();
 }
 
-enum Collection
-{
+enum Collection {
     Vector(Vec<i32>),
     Str(String),
     HashMap(HashMap<String, i32>),
 }
 
-impl Collection
-{
+impl Collection {
     fn vector() -> Self
     {
         Collection::Vector(Vec::new())
@@ -43,8 +40,7 @@ impl Collection
     }
 }
 
-fn get_vector()
-{
+fn get_vector() {
     let mut vector_a = Collection::vector();
     if let Collection::Vector(v) = &mut vector_a {
         v.push(1);
@@ -62,8 +58,7 @@ fn get_vector()
 }
 // Note : vec!는 단순히 객체의 타입을 지정만 하는 것이 아닌 생성하는 것이기 때문에,
 
-fn get_string()
-{
+fn get_string() {
     let mut str_a = Collection::string();
     if let Collection::Str(s) = &mut str_a {
         s.push_str("String_A");
@@ -86,16 +81,7 @@ fn get_string()
 // Tip : push로 문자열을 추가 하면 char 타입으로 인식하지만, push_str는 문자열의 전체를 인식하여 메모리 확장에 사용한다.
 //       bytes를 활용하여 각 문자열 값을 확인 하고자 유용하게 사용할 수 있을거라 생각한다.
 
-fn string_replace()
-{
-    let str = "String Replace";
-    println!("{}", str.replace("String", "Re_Replace"));
-}
-// Note : Replace를 사용하면 특정 문자열를 다른 문자열로 변경하는 방법이다 str.replace(from, to)로 나누어 지는데
-//        from을 기준으로 to의 문자열이 변경된다.
-
-fn get_hash_map()
-{
+fn get_hash_map() {
     let mut hash_a = Collection::hash_map();
     if let Collection::HashMap(hm) = &mut hash_a {
         hm.insert("HashMap_A".to_string(), 1);
@@ -116,3 +102,10 @@ fn get_hash_map()
 //        알고리즘 이지만 속도는 빠르지 않다.
 //        entry는 K의 접근을 관리하는 구조체를 반환하여 존재 여부에 따라 처리를 한다.
 //        or_insert는 K가 없을 경우 기본 값을 삽입하고 해당 값의 가변 참조를 반환한다. 즉 K의 존재 여부 확인
+
+fn string_replace() {
+    let str = "String Replace";
+    println!("{}", str.replace("String", "Re_Replace"));
+}
+// Note : Replace를 사용하면 특정 문자열를 다른 문자열로 변경하는 방법이다 str.replace(from, to)로 나누어 지는데
+//        from을 기준으로 to의 문자열이 변경된다.

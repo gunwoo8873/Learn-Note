@@ -1,31 +1,39 @@
-use std::{io, thread, sync::atomic::{AtomicBool, Ordering::Relaxed}};
+use std::{
+  sync::atomic::{AtomicUsize, Ordering::Relaxed}, 
+  thread::{scope, sleep}, 
+  time::Duration,
+};
 
-fn main()
-{
-  atomic();
+fn main() {
+  current_status();
 }
 
-fn atomic()
-{
-  static STOP: AtomicBool = AtomicBool::new(false); // Stop Flag to Tread stop function
+fn process_item(i: usize) {
+  println!("Processing item {}", i);
+}
 
-  let back_thread = thread::spawn(|| {
-    while !STOP.load(Relaxed)
-    {
-      some_work();
+fn current_status() {
+  let num_done = AtomicUsize::new(0);
+
+  scope(|s| {
+    s.spawn(|| {
+      for i in 0..100 {
+        process_item(i);
+        num_done.store(i + 1, Relaxed);
+      }
+    });
+
+    loop {
+      let num_done = num_done.load(Relaxed);
+
+      if num_done == 100 {
+        break;
+      }
+
+      println!("Waiting... ({}/100)", num_done);
+      sleep(Duration::from_millis(100));
     }
   });
 
-  for line in io::stdin().lines()
-  {
-    match line.unwrap().as_str()
-    {
-      "help" => println!("Commands: help, stop"),
-      "stop" => break,
-      cmd => println!("Unknown command: {:?}", cmd),
-    }
-  }
-
-  STOP.store(true, Relaxed); // Background Thread Stop Flag
-  back_thread.join().unwrap();          // Background Thread Wait for Stopping
+  println!("Done!");
 }
