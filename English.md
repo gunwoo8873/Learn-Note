@@ -393,7 +393,7 @@ outgoing [incomig]
 
 ## 10. Open-source Community
 
-| N  | Short  | Long                                   | Description                                                                |
+| N  | Short  | Long                                   | Discription                                                                |
 |:--:|:------:|:---------------------------------------|:---------------------------------------------------------------------------|
 | 1  |  LGTM  | Looks Good To Me                       | PR에서 코드에 문제가 없을 경우 사용한다                                                    |
 | 2  | TL; DR | Too Long; Didn`t Read                  | 본문 길어 사전에 요약된 정보를 제공할 때 사용한다                                               |
@@ -414,7 +414,7 @@ outgoing [incomig]
 
 ## 11. Markup HTML, CSS, JS [25. 01. 03]
 
-| N  |               Name               | Description                                                                       |
+| N  |               Name               | Discription                                                                       |
 |:--:|:--------------------------------:|:----------------------------------------------------------------------------------|
 | 1  |             Content              | 명확한 갯수를 셀 수 있는 명사나 복수형으로 텍스트, 이미지, 영상, 이미지 등 명사 및 단수형으로 사용                        |
 | 2  |            Technologu            | 기술을 뜻하며, 도구, 장비, 특정한 기술적 개념을 가리킨다                                                 |
@@ -435,7 +435,7 @@ outgoing [incomig]
 
 ## 13. Infra & Kubernetes [25. 01. 04]
 
-| N  |          Name           | Description                                       |
+| N  |          Name           | Discription                                       |
 |:--:|:-----------------------:|:--------------------------------------------------|
 | 1  |    Production-grade     | [구] 프로덕션 등급, 실제 운영 환경의                            |
 | 2  |       Deployment        | [명] 배포                                            |
