@@ -1,25 +1,30 @@
 # Warming up
 
 ## 1. 일상 영어와 IT 영어는 다르다. [24. 11. 23]
+
 ```md
 Render
 일상 : 어떠한 상태가 되게 하다. 혹은 주다
 IT   : 페이지를 만들다, 그래픽 요소를 그리다
 ```
+
 #### 1.2. Terminology [전문용어]
+
 ```md
 Headless
 Note : GUI 없이 작동 가능한 S/W 및 Application
 ```
 
 #### 1.3. Acronym [두문자어 = 약어]
+
 ```md
 WYSIWYG
-Note : What you see is What you get 
-       편집 화면에 입력한 글자, 이미지, 영상 등 컨텐츠가 출력물에 동일하게 표시되는 방식
+Note : What you see is What you get
+편집 화면에 입력한 글자, 이미지, 영상 등 컨텐츠가 출력물에 동일하게 표시되는 방식
 ```
 
 #### 1.4. Slang [은어, 인터넷 용어]
+
 ```md
 PR = Pull Request
 Note : 개발한 내용을 다른 사람들에게 알려 프로젝트 코드에 반영 요청
@@ -28,8 +33,8 @@ Note : 개발한 내용을 다른 사람들에게 알려 프로젝트 코드에 
 > [1. LGTM](https://www.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS3858769941)  
 > [2. Slang](https://inpa.tistory.com/entry/IT-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0-%ED%83%9C%EA%B7%B8-LGTM-%EC%9D%B4%EB%9E%80)
 
-
 ## 2. Branch, File, Commits [24. 11. 28]
+
 ```md
 The latest Commits on the base branch include a wrong API Call
 ```
@@ -50,8 +55,10 @@ Ask for : 요청하다, 찾다
 ```
 
 ## 3. Programing 용어 [24. 11. 28]
+
 ```md
 # 자료형
+
 integer [int] : 정수
 Signed : Signed Integer [부호가 있다] / unsigned : Unsigned Integer [부호가 없다]
 Float [float] : 실수 [부동소수점]
@@ -65,6 +72,7 @@ Binary : 진수
 
 ```md
 # Programing
+
 Loop Statement : 반복문
 Local Variable : 지역 변수 / Global Constant 전역 상수
 Conditional Statement : 조건문
@@ -80,6 +88,7 @@ Regular Expression [Reg Ex] : 정규식
 
 ```md
 # Programing
+
 Syntax : 구문
 Declaration : 선언
 Recursive Function : 재귀 함수
@@ -96,6 +105,7 @@ Static / Dynamic : 정적인 / 동적인
 
 ```md
 # Ground Field
+
 Front-end : 프론트엔드 [Hyphenate]
 Back-end : 백엔드 [Hyphenate]
 DevOps : 데브옵스
@@ -110,6 +120,7 @@ MVC : Model, View, Controller
 ```
 
 ## 4. Special Characters [24. 11. 29]
+
 ```txt
 () / (()) : Parenthesis [단괄호] / Parentheses [양괄호]
 []  : Brackets [Square Brackets]
@@ -142,6 +153,7 @@ _   : Underscore
 ```
 
 ## 5. Bad, Good Naming Convention [24. 12. 05]
+
 ```txt
 일일 시간 제한 = Daily Time Limit
 ```
@@ -151,30 +163,31 @@ _   : Underscore
     Geek Haus -> geekHaus
     Daily Time Limit -> dailyTimeLimit
     ```
-    > 변수와 함수 명명에 사용
+   > 변수와 함수 명명에 사용
 
 2. Pascal Case
     ```md
     Geek Haus -> GeekHaus
     Daily Time Limit -> DailyTimeLimit
     ```
-    > Class 및 Component 명명에 사용
+   > Class 및 Component 명명에 사용
 
 3. Snake Case
     ```md
     Geek Haus -> Geek_Haus
     Daily Time Limit -> Daily_Time_Limit
     ```
-    > 변수/함수명, 전역 상수에 사용
+   > 변수/함수명, 전역 상수에 사용
 
 4. Kebab Case
     ```md
     Geek Haus -> Geek-Haus
     Daily Time Limit -> Daily-Time-Limit
     ```
-    > URL, CSS, HTTP, Package 명에 사용
+   > URL, CSS, HTTP, Package 명에 사용
 
 ## 6. 동, 명사 영단어
+
 ```md
 Activate : 활성화하다, 작동시키다
 Allocate : 할당하다, 배분하다
@@ -248,19 +261,24 @@ Yield :
 ```
 
 ## 7. Comunication [24. 12. 19]
+
 ### Git Workflow
+
 * `title`  : Title or Subject
 * `body`   : Body or Description
 * `footer` : Footer
-  
+
 ### Conventional-Commit
+
 ```md
 <type>[optional scope]: <description>
 [optional body]
 [optional footer]
 ```
+
 ```md
 # type
+
 feat : 코드에 새로운 기능 추가
 fix  : 버그 수정
 Breaking Change : 이전 버전과 호환되지 않는 변경 내역으로, !로 표시할 수 있음
@@ -301,8 +319,8 @@ Rename : 이름을 바꾸다
 Move : 이동하다, 이동시키다
 ```
 
-
 ## 8. Global [24. 12. 20]
+
 ```md
 Increment / Decrement : 증가시키다. / 감소시키다
 Nested : 중첩된
@@ -327,6 +345,7 @@ I`m wondering if this is the right fix : 이게 옳은 해결법인지 확실하
 ```
 
 ## 9. VSCode
+
 ```md
 Vertical :
 [형] 수직의 [명] 수직
@@ -373,26 +392,69 @@ outgoing [incomig]
 ```
 
 ## 10. Open-source Community
-|   N   | Short  | Long                                   | Description                                                                                           |
-| :---: | :----: | :------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-|   1   |  LGTM  | Looks Good To Me                       | PR에서 코드에 문제가 없을 경우 사용한다                                                               |
-|   2   | TL; DR | Too Long; Didn`t Read                  | 본문 길어 사전에 요약된 정보를 제공할 때 사용한다                                                     |
-|   3   |  SSIA  | Subject Says it All                    | Title외에 별도의 설명이 필요하지 않을 경우 사용한다                                                   |
-|   4   |  TDB   | To Be Determined                       | 추후 논의 혹은 결정한다                                                                               |
-|   5   |  RFC   | Request For Comments                   | 일련번호를 부여해 제안된 내용을 Tracking(트래킹)하기도 한다                                           |
-|   6   | AFAIK  | As Far As i Know                       | 자신의 생각을 표출하지만 정확하지 않다는 정보를 말할 때 사용한다                                      |
-|   7   |  FYI   | For Your Information                   | 참고로라는 의미로 다른 사람과 정보를 공유할 때 사용한다                                               |
-|   8   |  TIA   | Thanks in Advance                      | 미리 감사의 표시를 표하고 다른 사람에게 도움을 요청할 때 사용한다                                     |
-|   9   |  IRL   | in Real Life                           | 현실에서라는 의미로 테스트 및 가상세계와 다른 현실을 강조할 때 사용한다                               |
-|  10   |  AFK   | Away From Keyboard                     | 자리 비움이나 휴가 중일때의 약어                                                                      |
-|  11   |  TBH   | To Be Honest                           | 솔직히 라는 의미를 가지고 있다 즉 진실성을 표하는 방식                                                |
-|  12   |  BTW   | By The Way                             | 대화의 주제를 전환할 때 사용한다                                                                      |
-|  13   |  WIP   | Work in Progress                       | 진행 중이나 진행 준인 작업 이라는 의미다                                                              |
-|  14   |  IMHO  | In My Honest Opinion or Humble Opinion | 개인의 소견을 표할 경우 겸손한 느낌을 담아 표시한다                                                   |
-|  15   |  ACK   | Acknowledgement                        | 변경을 허용이나 동의한다는 의미로 사용한다 반의어는 `NACK or NAK` [Negative Acknowledgement]라고 한다 |
-|  16   |  Noob  | Newbie                                 | 입문자라는 뜻으로 새로 참여하는 Open source Community혹은 Project에 자신을 소개할 때 사용한다         |
+
+| N  | Short  | Long                                   | Description                                                                |
+|:--:|:------:|:---------------------------------------|:---------------------------------------------------------------------------|
+| 1  |  LGTM  | Looks Good To Me                       | PR에서 코드에 문제가 없을 경우 사용한다                                                    |
+| 2  | TL; DR | Too Long; Didn`t Read                  | 본문 길어 사전에 요약된 정보를 제공할 때 사용한다                                               |
+| 3  |  SSIA  | Subject Says it All                    | Title외에 별도의 설명이 필요하지 않을 경우 사용한다                                            |
+| 4  |  TDB   | To Be Determined                       | 추후 논의 혹은 결정한다                                                              |
+| 5  |  RFC   | Request For Comments                   | 일련번호를 부여해 제안된 내용을 Tracking(트래킹)하기도 한다                                      |
+| 6  | AFAIK  | As Far As i Know                       | 자신의 생각을 표출하지만 정확하지 않다는 정보를 말할 때 사용한다                                       |
+| 7  |  FYI   | For Your Information                   | 참고로라는 의미로 다른 사람과 정보를 공유할 때 사용한다                                            |
+| 8  |  TIA   | Thanks in Advance                      | 미리 감사의 표시를 표하고 다른 사람에게 도움을 요청할 때 사용한다                                      |
+| 9  |  IRL   | in Real Life                           | 현실에서라는 의미로 테스트 및 가상세계와 다른 현실을 강조할 때 사용한다                                   |
+| 10 |  AFK   | Away From Keyboard                     | 자리 비움이나 휴가 중일때의 약어                                                         |
+| 11 |  TBH   | To Be Honest                           | 솔직히 라는 의미를 가지고 있다 즉 진실성을 표하는 방식                                            |
+| 12 |  BTW   | By The Way                             | 대화의 주제를 전환할 때 사용한다                                                         |
+| 13 |  WIP   | Work in Progress                       | 진행 중이나 진행 준인 작업 이라는 의미다                                                    |
+| 14 |  IMHO  | In My Honest Opinion or Humble Opinion | 개인의 소견을 표할 경우 겸손한 느낌을 담아 표시한다                                              |
+| 15 |  ACK   | Acknowledgement                        | 변경을 허용이나 동의한다는 의미로 사용한다 반의어는 `NACK or NAK` [Negative Acknowledgement]라고 한다 |
+| 16 |  Noob  | Newbie                                 | 입문자라는 뜻으로 새로 참여하는 Open source Community혹은 Project에 자신을 소개할 때 사용한다          |
+
+## 11. Markup HTML, CSS, JS [25. 01. 03]
+
+| N  |               Name               | Description                                                                       |
+|:--:|:--------------------------------:|:----------------------------------------------------------------------------------|
+| 1  |             Content              | 명확한 갯수를 셀 수 있는 명사나 복수형으로 텍스트, 이미지, 영상, 이미지 등 명사 및 단수형으로 사용                        |
+| 2  |            Technologu            | 기술을 뜻하며, 도구, 장비, 특정한 기술적 개념을 가리킨다                                                 |
+| 3  |             Refer to             | [동] 의미하다, 나타내다, ~를 ~라고 부르다, 언급하다, ~을 ~에게 보내다                                      |
+| 4  |             Annotate             | [동] 주석을 달다, 설명이나 의견을 추가하다 [명] Annotation                                          |
+| 5  |         Case Insensitive         | [형] 대소문자를 구분하지 않는 이지만 sensitive와 같은 인식을 할 수 있다                                    |
+| 6  |             Dialects             | [명] 파생된 언어, 특수 언어, 방언                                                             |
+| 7  |           Standardize            | [명] 표준화하다                                                                         |
+| 8  |          Specification           | [명] 사양, 명세, 명세서 (Job에서 흔히 등장하는 `스펙`은 Specification을 뜻하며 기술 스택이나 요구사항 명세 등을 의미한다   |
+| 9  |         Take a snapshot          | [동] 스냅샷은 찍다 (Programe, Datebase, Service ...에서 특정 시점의 Copy or Stauts를 기록해둔 것을 의미) |
+| 10 | Stable OR LTS(Long Term Support) | [형] 안정된, 안정적인                                                                     |
+| 11 |          Cross-platform          | [형] 여러 운영체제, 프로그램, 프로그래밍 언어 등에서 작동하는                                              |
+| 12 |        Scripting language        | [명] 스크립트 언어                                                                       |
+| 13 |            Extension             | [명] 확장 프로그램, 확장자, 확장, 연장                                                          |
+| 14 |           Inovocation            | [명] 실행 = Execution, 탄원, 발동                                                        |
+
+## 12. Android [25. 01. 04]
+
+## 13. Infra & Kubernetes [25. 01. 04]
+
+| N  |          Name           | Description                                       |
+|:--:|:-----------------------:|:--------------------------------------------------|
+| 1  |    Production-grade     | [구] 프로덕션 등급, 실제 운영 환경의                            |
+| 2  |       Deployment        | [명] 배포                                            |
+| 3  |          Scale          | [동] 규모나 크기를 변경하다, 성장시키다 [명] 규모                    |
+| 4  |      Containerize       | [동] 컨테이너화하다                                       |
+| 5  | Independent or Isolated | 독립적으로 or 격리된                                      |
+| 6  |      Best-of-breed      | [형] 최상의, 최상의 솔루션을 적용한                             |
+| 7  |         Outgrow         | [동] 요구되는 수준보다 커지다                                 |
+| 8  |       On-premises       | [형] 내부 인프라에 S/W를 직접 설치하고 관리하는 온프레미스 방식인 [명] 온프레미스 |
+| 9  |        Workload         | [명] 워크로드, 업무량, 작업량                                |
+| 10 |      Load Balance       | [명] 부하 분산, 로드 밸런스 [동] 부하를 분산시키다                   |
+| 11 |          Mount          | [동] 탑재하다, 파일 시스템에 올리다                             |
+| 12 |         Rollout         | [명] 출시, 공개                                        |
+| 13 |         Cluster         | [명] 클러스터, 모음, 무리                                  |
+| 14 |      User-defined       | [형] 사용자 정의된                                       |
+| 15 |        Advertise        | [동] 트러내다, 보이다, 광고하다, 알리다                          |
 
 ## ETC
+
 * `extension`는 확장자
 * `OS` 명칭을 사용할 경우 앞에 **전치사** `on`을 사용한다
 * `Storage` 앞에 전치자는 보통 `to`를 사용하지만 연관성이 없다면 `on`을 사용한다
