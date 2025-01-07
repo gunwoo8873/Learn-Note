@@ -1,0 +1,43 @@
+fn main() {
+    integer_fn();
+    character_fn();
+}
+
+struct Integer {
+    value_a: i32,
+    value_b: i32,
+}
+
+impl Integer {
+    fn sum(&self) -> i32 { self.value_a + self.value_b }
+    fn subtraction(&self) -> i32 { self.value_a - self.value_b }
+    fn multiplication(&self) -> i32 { self.value_a * self.value_b }
+    fn division(&self) -> i32 { self.value_a / self.value_b }
+    fn remainder(&self) -> i32 { self.value_a % self.value_b }
+}
+
+fn integer_fn() {
+    let sum = Integer { value_a: 10, value_b: 20 }.sum();
+    println!("sum = {}", sum);
+
+    let subtraction = Integer { value_a: 10, value_b: 20 }.subtraction();
+    println!("subtraction = {}", subtraction);
+
+    let multiplication = Integer { value_a: 10, value_b: 20 }.multiplication();
+    println!("multiplication = {}", multiplication);
+
+    let division = Integer { value_a: -10, value_b: 20 }.division();
+    println!("division = {}", division);
+
+    let remainder = Integer { value_a: 45, value_b: 20 }.remainder();
+    println!("remainder = {}", remainder);
+}
+
+struct Character {
+    char: char,
+}
+
+fn character_fn() {
+    let character = Character { char: 'a' };
+    println!("character = {}", character.char);
+}
