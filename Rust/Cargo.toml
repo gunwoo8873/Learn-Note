@@ -5,33 +5,5 @@ edition = "2024"
 
 [dependencies]
 [[bin]]
-name = "option"
-path = "./src/bin/Options.rs"
-
-[[bin]]
-name = "collection"
-path = "./src/bin/Collection.rs"
-
-[[bin]]
-name = "panic"
-path = "./src/bin/Panic.rs"
-
-[[bin]]
-name = "variable"
-path = "./src/bin/Variable.rs"
-
-[[bin]]
-name = "controlflow"
-path = "./src/bin/Control_Flow.rs"
-
-[[bin]]
-name = "Thread" # The Thread name is library name to don`t use the same name
-path = "./src/bin/Thread.rs"
-
-[[bin]]
-name = "ownership"
-path = "./src/bin/Ownership.rs"
-
-[[bin]]
-name = "grap"
-path = "./src/bin/Grap.rs"
+name = "datatype"
+path = "./src/bin/datatype.rs"
