@@ -1,6 +1,16 @@
 fn main() {
     integer_fn();
     character_fn();
+    tuple_fn();
+    test();
+}
+
+fn test() {
+    let mut default_index = 0;
+    while default_index < 100 {
+        default_index += 1;
+    }
+    println!("default_index = {}", default_index);
 }
 
 struct Integer {
@@ -26,7 +36,7 @@ fn integer_fn() {
     let multiplication = Integer { value_a: 10, value_b: 20 }.multiplication();
     println!("multiplication = {}", multiplication);
 
-    let division = Integer { value_a: -10, value_b: 20 }.division();
+    let division = Integer { value_a: 40, value_b: 20 }.division();
     println!("division = {}", division);
 
     let remainder = Integer { value_a: 45, value_b: 20 }.remainder();
@@ -37,7 +47,20 @@ struct Character {
     char: char,
 }
 
+impl Character {
+    fn char(&self) -> char { self.char }
+}
+
 fn character_fn() {
-    let character = Character { char: 'a' };
-    println!("character = {}", character.char);
+    let char = Character { char: 'a' }.char();
+    println!("char = {}", char);
+
+    let char = Character { char: 'A' }.char();
+    println!("char = {}", char);
+}
+
+fn tuple_fn() {
+    let tuple_index: (i32, f64, char) = (1, 2.0, 'a');
+    let tuple_get = tuple_index.0;
+    println!("tuple_get = {}", tuple_get);
 }
