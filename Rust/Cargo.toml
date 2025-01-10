@@ -7,3 +7,7 @@ edition = "2024"
 [[bin]]
 name = "datatype"
 path = "./src/bin/datatype.rs"
+
+[[bin]]
+name = "ownership"
+path = "./src/bin/ownership.rs"
