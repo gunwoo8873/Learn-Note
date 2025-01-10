@@ -5,14 +5,6 @@ fn main() {
     test();
 }
 
-fn test() {
-    let mut default_index = 0;
-    while default_index < 100 {
-        default_index += 1;
-    }
-    println!("default_index = {}", default_index);
-}
-
 struct Integer {
     value_a: i32,
     value_b: i32,
