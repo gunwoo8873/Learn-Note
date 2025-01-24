@@ -14,7 +14,7 @@
 ```
 
 <figure align="center">
-  <img src="os-n-kernel-fig1.jpeg" alt="">
+  <img src="./img/os-n-kernel-fig1.jpeg" alt="">
   <figcaption align="center">OS Kernel</figcaption>
 </figure>
 
@@ -55,6 +55,6 @@ H/W가 자동중에 CPU에게 알려주는 신호(Signal)이다. 시스템 버�
 ```
 
 <figure align="center">
-  <img src="Interrupt.png" alt="" width=600>
+  <img src="./img/Interrupt.png" alt="" width=600>
   <figcaption align="center">Interrupt Signal</figcaption>
 </figure>
