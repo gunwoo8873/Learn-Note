@@ -1,12 +1,12 @@
-# 운영체제와 커널 [OperatingSystem]
-### 운영체제
+# 운영체제
+
+### 운영체제 정의
 ```md
 운영체제는 응용 프로그램(Application Programs, App)과 하드웨어(Hardware, H/W) 사이에 위치하며, 사용자가 응용 프로그램을 통해서
 어떤 서비스를 요청하면 응용 프로그램은 운영체제(OS)에게 신호를 전달하고 하드웨어를 조작을 요청한다. 요청 받은 운영체제는 서비스에
 맞는 하드웨어를 작동시켜 수행을 완수한다
 ```
 
-### 운영체제 정의
 ```md
 * 컴퓨터 위에서 항상 실행되는 하나의 프로그램
 * Kernel로도 정의
@@ -15,7 +15,7 @@
 ```
 
 <figure align="center">
-  <img src="./img/os-n-kernel-fig1.jpeg" alt="">
+  <img src="./img/os-n-kernel-fig1.jpeg" alt="" width=400>
   <figcaption align="center">OS Kernel</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@
 줄 수 있는 작업들은 커널이라는 분리된 공간에서 특별한 권한을 가지고 실핼하도록 설계된다
 ```
 
-### Kernel
+# Kernel
 ```md
 커널 설계는 OS에서 차지하는 커널의 비중이나 추상화 방법에 따라 분류하여 다음과 같이 부른다
 * 단일형 커널 (Monolithic Kernel)
@@ -88,14 +88,15 @@
 ```
 
 ### Interrupt
-```md
-H/W가 자동중에 CPU에게 알려주는 신호(Signal)이다. 시스템 버스(System bus)를 통해 CPU에게 신호를 전송함 으로써 어느 시간이던 H/W는 인터럽트를 발생시킬 수 있다
-```
-
 <figure align="center">
-  <img src="./img/Interrupt.png" alt="" width=600>
+  <img src="./img/Interrupt.png" alt="" width=400>
   <figcaption align="center">Interrupt Signal</figcaption>
 </figure>
+
+```md
+H/W가 자동중에 CPU에게 알려주는 신호(Signal)이다. 시스템 버스(System bus)를 통해 CPU에게 신호를 전송함 으로써
+어느 시간이던 H/W는 인터럽트를 발생시킬 수 있다
+```
 
 ### Von neumann architecture
 ```md
@@ -106,15 +107,9 @@ H/W가 자동중에 CPU에게 알려주는 신호(Signal)이다. 시스템 버�
 * 피연산자들에게서 명령어가 실행된 이후에 결과는 다시 메모리에 저장된다
 ```
 
-# Process
-```md
-
-```
-
 # Storage system
-
 <figure align="center">
-  <img src="./img/Computer-storage-system.png" alt="" width=600>
+  <img src="./img/Computer-storage-system.png" alt="" width=400>
   <figcaption align="center">Computer-storage-system</figcaption>
 </figure>
 
@@ -125,4 +120,19 @@ H/W가 자동중에 CPU에게 알려주는 신호(Signal)이다. 시스템 버�
 
 Main memory는 주요 하드웨어 부품인 RAM에 해당되며, Cache와 Register는 CPU에 존재하는 작은 용량의 기억장치이다
 Cache는 자주 사용하는 데이터를 저장하고 Registers는 명령어나 연산에 주로 사용하여 피연산자를 저장한다
+```
+
+# Memory system
+<figure align="center">
+  <img src="./img/Memory-Layout.png" alt="" width=400>
+  <figcaption align="center">Memory Layout</figcaption>
+</figure>
+
+```md
+프로세스(Process)는 스택(Stack), 힙(Heap), Block started by symbol(BSS), Data, Text로 구성되어 있다
+* OS Kerner Space : 드라이버 설치
+* Stack : 지역변수, 매개변수, 후입선출(LIFO), 높은 주소에서 낮은 주소의 방향으로 할당
+* Heap : 동적 메모리(new), 선입선출(FIFO), 낮은 주소에서 높은 주소의 방향으로 할당
+* BSS : 초기화되지 않은 변수를 위한 영역
+* Text : 상수, 실행할 프로그램의 코드가 저장되는 부분
 ```
