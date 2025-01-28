@@ -451,20 +451,24 @@ BOOT_IMAGE=/vmlinuz-6.8.0-1021-aws root=PARTUUID=2bb9818b-3393-4017-8da7-c739e7b
   lspci
 
   # Result
-  00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
-  00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
-  00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
-  00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 01)
-  00:02.0 VGA compatible controller: Cirrus Logic GD 5446
-  00:03.0 Unassigned class [ff80]: XenSource, Inc. Xen Platform Device (rev 01)
+  00:00.0 Host bridge: Intel Corporation 440BX/ZX/DX - 82443BX/ZX/DX Host bridge (rev 01)
+  00:01.0 PCI bridge: Intel Corporation 440BX/ZX/DX - 82443BX/ZX/DX AGP bridge (rev 01)
+  00:07.0 ISA bridge: Intel Corporation 82371AB/EB/MB PIIX4 ISA (rev 08)
+  00:07.1 IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)
+  00:07.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+  00:07.7 System peripheral: VMware Virtual Machine Communication Interface (rev 10)
+  00:0f.0 VGA compatible controller: VMware SVGA II Adapter
+  {...}
+
+  > is lspci the network information and hardware issue checking for useing
   ```
 
   ```bash
-  ethool -g eth0 rx 255
-  ```
-  
-  ```bash
-  ethool -g eth0 rx 255
+  # CMD
+  lspci | grep -i ether
+
+  # Result
+  03:00.0 Ethernet controller: VMware VMXNET3 Ethernet Controller (rev 01)
   ```
 
 # ETC
