@@ -1,8 +1,7 @@
 fn main() {
-    integer_fn();
-    character_fn();
-    tuple_fn();
-    test();
+  integer_compile();
+  character_compile();
+  tuple_compile();
 }
 
 struct Integer {
@@ -18,7 +17,7 @@ impl Integer {
     fn remainder(&self) -> i32 { self.value_a % self.value_b }
 }
 
-fn integer_fn() {
+fn integer_compile() {
     let sum = Integer { value_a: 10, value_b: 20 }.sum();
     println!("sum = {}", sum);
 
@@ -43,7 +42,7 @@ impl Character {
     fn char(&self) -> char { self.char }
 }
 
-fn character_fn() {
+fn character_compile() {
     let char = Character { char: 'a' }.char();
     println!("char = {}", char);
 
@@ -51,7 +50,7 @@ fn character_fn() {
     println!("char = {}", char);
 }
 
-fn tuple_fn() {
+fn tuple_compile() {
     let tuple_index: (i32, f64, char) = (1, 2.0, 'a');
     let tuple_get = tuple_index.0;
     println!("tuple_get = {}", tuple_get);

@@ -5,6 +5,7 @@ S/W 및 개념 모델이 Logical Network를 형성한다.
 현대식 컴퓨터 네트워크의 복잡도로 인하여 작업 방법을 설명하기 위한 개념적 모델이 등장했고, 일반적인 모델 중 하나가
 ISO의 OSI 참조 모델이다. 이를 OSI 7 Layout라고 부른다.
 ```
+
 > * Physical Network : 물리적 네트워크 [케이블, 스위치, 라우터]
 > * Logical Network : 논리적 네트워크 [VLAN, VPN, SDN]
 > * H/W : Hardware

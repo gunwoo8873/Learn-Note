@@ -1,7 +1,7 @@
 package main
 
 import (
-	"create/src/bin"
+	"learn/src/bin"
 )
 
 func main() {
