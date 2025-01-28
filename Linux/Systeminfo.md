@@ -1,6 +1,6 @@
 # Linux system information
 
-> OS : Ubuntu
+> OS : CentOS
 
 ### Kernel data check
 ```bash
@@ -10,7 +10,7 @@ uname -a
 * 커널 정보 데이터를 확인 하고자 할 경우에 사용한다
 
 # Result
-Linux ip-172-31-34-139 6.8.0-1021-aws #23-Ubuntu SMP Mon Dec  9 23:59:34 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+Linux localhost.localdomain 6.12.0-43.el10.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jan 20 12:57:45 UTC 2025 x86_64 GNU/Linux
 
 > Kernel Version : 5.15.167.4-microsoft-standard-WSL2
 > Bit : 64
@@ -148,23 +148,42 @@ BOOT_IMAGE=/vmlinuz-6.8.0-1021-aws root=PARTUUID=2bb9818b-3393-4017-8da7-c739e7b
 
 
   # Result
-  # dmidecode 3.5
+  # dmidecode 3.6
   Getting SMBIOS data from sysfs.
   SMBIOS 2.7 present.
 
   Handle 0x0000, DMI type 0, 24 bytes
   BIOS Information
-          Vendor: Xen # Made in Xen server
-          Version: 4.11.amazon # Useing to equle current version
-          Release Date: 08/24/2006 # BIOS date
-          Address: 0xE8000
-          Runtime Size: 96 kB
-          ROM Size: 64 kB
-          Characteristics:
-                  PCI is supported
-                  EDD is supported
-                  Targeted content distribution is supported
-          BIOS Revision: 4.11
+        Vendor: Phoenix Technologies LTD
+        Version: 6.00
+        Release Date: 11/12/2020
+        Address: 0xEA480
+        Runtime Size: 88960 bytes
+        ROM Size: 64 kB
+        Characteristics:
+                ISA is supported
+                PCI is supported
+                PC Card (PCMCIA) is supported
+                PNP is supported
+                APM is supported
+                BIOS is upgradeable
+                BIOS shadowing is allowed
+                ESCD support is available
+                Boot from CD is supported
+                Selectable boot is supported
+                EDD is supported
+                Print screen service is supported (int 5h)
+                8042 keyboard services are supported (int 9h)
+                Serial services are supported (int 14h)
+                Printer services are supported (int 17h)
+                CGA/mono video services are supported (int 10h)
+                ACPI is supported
+                Smart battery is supported
+                BIOS boot specification is supported
+                Function key-initiated network boot is supported
+                Targeted content distribution is supported
+        BIOS Revision: 4.6
+        Firmware Revision: 0.0
   ```
 
 * ## System
@@ -316,14 +335,197 @@ BOOT_IMAGE=/vmlinuz-6.8.0-1021-aws root=PARTUUID=2bb9818b-3393-4017-8da7-c739e7b
   Tsx async abort:        Not affected
   ```
 
-# ETC
-### Memory
-```bash
-# CMD
-free
+* ## Memory
+  <figure align="center">
+    <img src="./img/Linux-memory-array.png" alt="" width=600>
+    <figcaption align="center">Memory Array</figcaption>
+  </figure>
 
-# Result
-               total        used        free      shared  buff/cache   available
-Mem:        15991116      698260    15358968        3096      196120    15292856
-Swap:        4194304           0     4194304
-```
+  ```bash
+  # CMD
+  dmidecode -t memory
+
+  # Result
+  # dmidecode 3.5
+  Getting SMBIOS data from sysfs.
+  SMBIOS 2.7 present.
+
+  Handle 0x1000, DMI type 16, 19 bytes
+  Physical Memory Array
+          Location: Other
+          Use: System Memory
+          Error Correction Type: Multi-bit ECC
+          Maximum Capacity: 1 GB
+          Error Information Handle: Not Provided
+          Number Of Devices: 1
+
+  Handle 0x1100, DMI type 17, 34 bytes
+  Memory Device
+          Array Handle: 0x1000
+          Error Information Handle: 0x0000
+          Total Width: 64 bits
+          Data Width: 64 bits
+          Size: 1 GB
+          Form Factor: DIMM
+          Set: None
+          Locator: DIMM 0
+          Bank Locator: Not Specified
+          Type: RAM
+          Type Detail: None
+          Speed: Unknown
+          Manufacturer: Not Specified
+          Serial Number: Not Specified
+          Asset Tag: Not Specified
+          Part Number: Not Specified
+          Rank: Unknown
+          Configured Memory Speed: Unknown
+  
+  # Description
+  > Memory 키워드는 Physical Array와 Memory Device의 두 영역으로 나눠진다
+  > Physical Array는 하나의 CPU Socket에 함께 할당된 Physical Array memory의 Group을 의미한다
+  > Physical Memory Array는 총 9개의 memory를 할당할 수 있으며 최대 사이즈는 192GB 까지 할당이 가능하다
+  > NUMA라는 개념을 이용해서 각각의 CPU가 사용할 수 있는 Local memory를 제공한다
+  ```
+
+  ```bash
+  # CMD
+  dmidecode -t memory | grep -i size:
+
+  # Result
+  Size: 1 GB
+  ```
+
+* ## Disk
+  ```bash
+  # CMD
+  df -h
+
+  # Result
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/root       6.8G  1.7G  5.0G  26% /
+  tmpfs           479M     0  479M   0% /dev/shm
+  tmpfs           192M  876K  191M   1% /run
+  tmpfs           5.0M     0  5.0M   0% /run/lock
+  /dev/xvda16     881M   76M  744M  10% /boot
+  /dev/xvda15     105M  6.1M   99M   6% /boot/efi
+  tmpfs            96M   12K   96M   1% /run/user/1000
+
+  # Description
+  > IDE 방식 디스크는 hda로 표기한다
+  > SCSI 방식의 디스크와 최근에 나오는 SATA, SAS인 Hard Disk는 sda로 표기한다
+  > vda는 VM Server에서 사용하는 디스크 타입이다 주로 Xen, KVM과 같이 Hypervisor 위에서 동작 중인 서버들에서 주로 확인이 가능하다
+  ```
+
+  ```bash
+  # Need to install tool
+  apt install smartmontools
+
+  # CMD
+  smartctl -a /dev/sdc
+
+  # CMD
+  
+
+  > Server에서 사용하는 제조사 마다 RAID 컨트룰러를 다르게 사용하니 lsmod를 사용해서 컨트룰러 드라이버 명령어를 확인이 필요하다
+
+  # Result
+  smartctl 7.4 2023-08-01 r5530 [x86_64-linux-5.15.167.4-microsoft-standard-WSL2] (local build)
+  Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
+
+  === START OF INFORMATION SECTION ===
+  Vendor:               Msft
+  Product:              Virtual Disk
+  Revision:             1.0
+  Compliance:           SPC-3
+  User Capacity:        1,099,511,627,776 bytes [1.09 TB]
+  Logical block size:   512 bytes
+  Physical block size:  4096 bytes
+  LU is thin provisioned, LBPRZ=0
+  ```
+
+# Network
+
+* ## lspci
+  ```bash
+  # CMD
+  lspci
+
+  # Result
+  00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
+  00:01.0 ISA bridge: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
+  00:01.1 IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]
+  00:01.3 Bridge: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 01)
+  00:02.0 VGA compatible controller: Cirrus Logic GD 5446
+  00:03.0 Unassigned class [ff80]: XenSource, Inc. Xen Platform Device (rev 01)
+  ```
+
+  ```bash
+  ethool -g eth0 rx 255
+  ```
+  
+  ```bash
+  ethool -g eth0 rx 255
+  ```
+
+# ETC
+* ## Memory
+  ```bash
+  # CMD
+  free
+
+  # Result
+                total        used        free      shared  buff/cache   available
+  Mem:        15991116      698260    15358968        3096      196120    15292856
+  Swap:        4194304           0     4194304
+  ```
+
+  ```bash
+  # CMD
+  free -m
+
+  # Result
+                  total        used        free      shared  buff/cache   available
+  Mem:           15616         703       14892           3         283       14912
+  Swap:           4096           0        4096
+  ```
+
+* ## Linux Ubuntu driver cmd
+  ```bash
+  # CMD
+  lsmod
+
+  # Result
+  Module                  Size  Used by
+  8021q                  45056  0
+  garp                   20480  1 8021q
+  mrp                    20480  1 8021q
+  stp                    12288  1 garp
+  llc                    16384  2 stp,garp
+  crct10dif_pclmul       12288  1
+  crc32_pclmul           12288  0
+  polyval_clmulni        12288  0
+  polyval_generic        12288  1 polyval_clmulni
+  ghash_clmulni_intel    16384  0
+  sha256_ssse3           32768  0
+  sha1_ssse3             32768  0
+  aesni_intel           356352  0
+  binfmt_misc            24576  1
+  crypto_simd            16384  1 aesni_intel
+  cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+  psmouse               217088  0
+  nls_iso8859_1          12288  1
+  input_leds             12288  0
+  serio_raw              20480  0
+  sch_fq_codel           24576  2
+  nf_conntrack          196608  0
+  nf_defrag_ipv6         24576  1 nf_conntrack
+  nf_defrag_ipv4         12288  1 nf_conntrack
+  libcrc32c              12288  1 nf_conntrack
+  dm_multipath           45056  0
+  msr                    12288  0
+  efi_pstore             12288  0
+  nfnetlink              20480  2
+  ip_tables              32768  0
+  x_tables               65536  1 ip_tables
+  autofs4                57344  2
+  ```
