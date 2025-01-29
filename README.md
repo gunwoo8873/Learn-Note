@@ -9,8 +9,8 @@
 | 4    | [EN](./English.md)                       |
 | 5    | [QA Test](./QA-Engineer/) [Stop]         |
 | 6    | [Batch](./Batch/) [Stop]                 |
-| 7    | [PowerShell](./PowerShell/) [Stop]       |
-| 8    | [Shell](./Shell/) [Stop]                 |
+| 7    | [PowerShell](./PowerShell/)              |
+| 8    | [Shell](./Shell/)                        |
 | 9    | [Certification](./Certification/) [Stop] |
 | 10   | [Linux System](./Linux/)                 |
 
