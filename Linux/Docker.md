@@ -51,3 +51,19 @@
   ```
   > **Docker install version search** : `apt-cache madison docker-ce | awk '{ print $3 }'`  
   > **Custom version CMD** : `sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin`
+
+* ## 3. User access control
+  ```bash
+  # Step 1 : Docker access create group check
+  cat /etc/group
+
+  # Step 1.2 : Docker not create access group
+  sudo group add docker
+
+  # Step 2 : If not user docker access group
+  sudo usermod -aG docker $USER
+
+  # Step 3 : System reboot
+  sudo reboot
+  exit
+  ```
