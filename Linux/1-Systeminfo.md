@@ -418,29 +418,32 @@ BOOT_IMAGE=/vmlinuz-6.8.0-1021-aws root=PARTUUID=2bb9818b-3393-4017-8da7-c739e7b
 
   ```bash
   # Need to install tool
-  apt install smartmontools
+  rpm install smartmontools
 
   # CMD
-  smartctl -a /dev/sdc
-
-  # CMD
-  
-
-  > Server에서 사용하는 제조사 마다 RAID 컨트룰러를 다르게 사용하니 lsmod를 사용해서 컨트룰러 드라이버 명령어를 확인이 필요하다
+  smartctl -a /dev/[diskname]
 
   # Result
-  smartctl 7.4 2023-08-01 r5530 [x86_64-linux-5.15.167.4-microsoft-standard-WSL2] (local build)
-  Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
-
   === START OF INFORMATION SECTION ===
-  Vendor:               Msft
-  Product:              Virtual Disk
-  Revision:             1.0
-  Compliance:           SPC-3
-  User Capacity:        1,099,511,627,776 bytes [1.09 TB]
-  Logical block size:   512 bytes
-  Physical block size:  4096 bytes
-  LU is thin provisioned, LBPRZ=0
+  Model Number:                       VMware Virtual NVMe Disk
+  Serial Number:                      VMware NVME_0000
+  Firmware Version:                   1.3
+  PCI Vendor/Subsystem ID:            0x15ad
+  IEEE OUI Identifier:                0x565000
+  Controller ID:                      0
+  NVMe Version:                       1.3
+  Number of Namespaces:               64
+  Namespace 1 Size/Capacity:          64,424,509,440 [64.4 GB]
+  Namespace 1 Formatted LBA Size:     512
+  Local Time is:                      Wed Jan 29 19:37:16 2025 KST
+  Firmware Updates (0x03):            1 Slot, Slot 1 R/O
+  Maximum Data Transfer Size:         256 Pages
+
+  Supported Power States
+  St Op     Max   Active     Idle   RL RT WL WT  Ent_Lat  Ex_Lat
+  0 +     0.00W       -        -    0  0  0  0        0       0
+
+  > Server에서 사용하는 제조사 마다 RAID 컨트룰러를 다르게 사용하니 lsmod를 사용해서 컨트룰러 드라이버 명령어를 확인이 필요하다
   ```
 
 # Network
