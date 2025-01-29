@@ -43,14 +43,29 @@ top
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp
       5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushw
-                                          {...}
+  {...}
 
   > PID = 프로세스 넘버
   > USER = 사용자
   > PR / NI = PR [프로세스 우선순위], NI [PR을 조절하여 어떤 우선순위로 실행할지 조절 여부]
-  > VIRT / RES / SHR = VIRT [Vritual Memory Size], RES [사용하는 물리 메모리의 크기], SHR [다른 프로세스와 공유하는 메모리의 크기]
+  > VIRT / RES / SHR = VIRT [가상 메모리의 전체 크기], RES [사용하는 물리 메모리의 크기], SHR [다른 프로세스와 공유하는 메모리의 크기]
   > S = Process status
-  > %CPU / %MEM = #    
-  > TIME+ = #
-  > COMMAND = Process command name
+  > %CPU / %MEM = CPU와 Memory의 사용 비중 퍼센트
+  > TIME+ = 프로세스 수행 시간
+  > COMMAND = 명령어 이름
+  ```
+# System memory
+* ## VIRT and RES
+  ```md
+  VIRE는 Task라는 의미를 가지고 할당된 가상 메모리의 전체 크기를 나타낸다 RES는 실제 메모리에 올려서 사용하고 있는
+  물리 메모리의 크기를 나타내며 SHR는 다른 프로세스와 공유하고 있는 메모리의 크기를 말한다
+  Lib가 SHR 영역에 포함될 수 잇으며 대부분 Linux 프로세스들은 GLIBC라는 라이브러리를 참조하고 있기 때문에 사용하는
+  프로세스마다 공간 낭비가 발생한다 Kernel은 이 경우를 대비해서 공유 메모리라는 개념을 도입했고, 다수의 프로세스가 함께
+  사용하는 Lib는 공유 메모리 영역에 올려서 함께 사용하도록 구현했다
+  ```
+
+* ## fork
+  ```md
+  fork() 시스템 콜을 사용하면 Kernel은 현재 실행 중인 프로세스와 똑같은 프로세스를 Clone하게 되는데, 주로 fork후 exec 시스템
+  콜을 통해 전혀 다른 프로세스로 변한다
   ```

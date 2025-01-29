@@ -1,4 +1,4 @@
-# Install kubectl on Linux
+# 1. Install kubectl on Linux
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
@@ -27,3 +27,14 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
   kubectl: FAILED
   sha256sum: WARNING: 1 computed checksum did NOT match
   ```
+
+# 2. Install kubectl
+  ```bash
+  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  ```
+  > **User for root access on the target system**
+  > ```bash
+  > chmod +x kubectl
+  > mkdir -p ~/.local/bin
+  > mv ./kubectl ~/.local/bin/kubectl
+  > ```
