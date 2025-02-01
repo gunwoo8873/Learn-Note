@@ -30,3 +30,40 @@
   {...}
   ```
 
+* ## Smem
+  ```bash
+  # CMD
+  smem -t
+
+   PID User           Command                         Swap      USS      PSS      RSS
+  1101 root           /usr/sbin/atd -f                   0      208      279     2524
+   959 libstoragemgmt /usr/bin/lsmd -d                   0      240      286     1900
+   923 root           /usr/sbin/sedispatch               0      412      589     3400
+   958 root           /usr/sbin/irqbalance               0      560      807     4584
+   954 dbus           dbus-broker --log 4 --contr        0      788      852     2936
+  1103 root           /usr/sbin/crond -n                 0      936     1033     3676
+   953 dbus           /usr/bin/dbus-broker-launch        0      884     1187     4796
+   919  rpc           /usr/bin/rpcbind -w -f             0      884     1217      574
+  {...}
+    ----------------------------------------------------------------------------------
+   37     7                                              0   152068   189116   399188
+  ```
+
+# Buddy system
+> Kernel은 Buddy system을 통해서 프로세스에 메모리를 할당한다  
+> 물리 메모리를 연속된 메모리 영역으로 관리한다
+
+<figure align="center">
+  <img src="./img/Buddy-system.png" alt="" width=600>
+  <figcaption align="center">Buddy system memory info</figcaption>
+</figure>
+
+```bash
+# CMD
+cat /proc/buddyinfo
+
+# Result
+Node 0, zone      DMA      0      0      0      0      0      0      0      0      0      1      3
+Node 0, zone    DMA32      1      2      1      2      3      1      1      1      3      2    679
+Node 0, zone   Normal   5749   2649   1304    857    325    151    133     70     36     53    906
+```
