@@ -26,8 +26,15 @@ sudo timedatectl set-timezone Asia/Seoul
 # Smem
 * ## Ubuntu
 * ## CentOS 
-  * ~~EPEL repository create and access~~
+  * EPEL repository create and access
+    > Is not centos 10 version for have`t package
   ```bash
   # Step 1
   sudo dnf install epel-release -y
+  sudo dnf makecache
   ```
+  ```bash
+  # Step 2
+  yum install <pkg name>
+  ```
+  * smem
