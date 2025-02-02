@@ -66,4 +66,8 @@ cat /proc/buddyinfo
 Node 0, zone      DMA      0      0      0      0      0      0      0      0      0      1      3
 Node 0, zone    DMA32      1      2      1      2      3      1      1      1      3      2    679
 Node 0, zone   Normal   5749   2649   1304    857    325    151    133     70     36     53    906
+
+> DMA : 4KB + 8KB + 16KB + 32KB + 64KB + 128KB + 256KB + 512KB + 1024KB + 2048KB
+> DMA32 : 4KB + 8KB + 16KB + 32KB + 64KB
+> Normal : 4KB + 8KB + 16KB
 ```
