@@ -1,3 +1,36 @@
+# 0. Linux system
+* Swap memory
+  ```bash
+  swapoff -a
+  sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+  ```
+
+* Firewalld
+  ```bash
+  systemctl disable firewalld
+  systemctl stop firewalld
+  ```
+
+* br_netfilter
+  ```bash
+  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+  br_netfilter
+  EOF
+  ```
+
+* System update
+  ```bash
+  yum update -y
+  ```
+
+* Iptable
+  ```bash
+  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+  net.bridge.bridge-nf-call-ip6tables = 1
+  net.bridge.bridge-nf-call-iptables = 1
+  EOF
+  ```
+
 # 1. Install kubectl on Linux
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
