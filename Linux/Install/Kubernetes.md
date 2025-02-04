@@ -1,3 +1,36 @@
+# 0. Linux system
+* Swap memory
+  ```bash
+  swapoff -a
+  sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+  ```
+
+* Firewalld
+  ```bash
+  systemctl disable firewalld
+  systemctl stop firewalld
+  ```
+
+* br_netfilter
+  ```bash
+  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+  br_netfilter
+  EOF
+  ```
+
+* System update
+  ```bash
+  yum update -y
+  ```
+
+* Iptable
+  ```bash
+  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+  net.bridge.bridge-nf-call-ip6tables = 1
+  net.bridge.bridge-nf-call-iptables = 1
+  EOF
+  ```
+
 # 1. Install kubectl on Linux
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -38,3 +71,27 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
   > mkdir -p ~/.local/bin
   > mv ./kubectl ~/.local/bin/kubectl
   > ```
+
+# 3. Install kubeadm
+```bash
+sudo setenforce 0
+sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+```
+
+```bash
+cat <<EOF | sudo tee /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://pkgs.k8s.io/core:/stable:/v1.32/rpm/
+enabled=1
+gpgcheck=1
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.32/rpm/repodata/repomd.xml.key
+exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
+EOF
+```
+
+```bash
+sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+```
+
+
