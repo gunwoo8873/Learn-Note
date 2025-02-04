@@ -21,3 +21,4 @@
 * `24-12-17` Ngle 면접 결과 대기 및 언어 공부 순위 설정 [`1. Rust 2. Go 3. C++ 4. C#`]
 * `24-12-19` Conference Dir Remove
 * `25-01-27` Linux system and go language learning
+* `25-02-04` Likelion 인턴쉽 합류 end time `25-02-08`
