@@ -1,4 +1,4 @@
-.PHONY: datatype contianer operator
+.PHONY: datatype contianer operator controlflow
 
 datatype:
 	go run ./datatype/main.go
@@ -8,3 +8,6 @@ container:
 
 operator:
 	go run ./operator/main.go
+
+controlflow:
+	go run ./controlflow/main.go
