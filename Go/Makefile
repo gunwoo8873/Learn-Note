@@ -1,4 +1,4 @@
-.PHONY: datatype contianer operator controlflow
+.PHONY: datatype contianer operator controlflow function
 
 datatype:
 	go run ./datatype/main.go
@@ -11,3 +11,6 @@ operator:
 
 controlflow:
 	go run ./controlflow/main.go
+
+function:
+	go run ./function/main.go
