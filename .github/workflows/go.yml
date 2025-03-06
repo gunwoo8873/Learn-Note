@@ -3,8 +3,6 @@ name: Golang learn actions
 on:
   push: 
     branches: ["golang"]
-    paths:
-      - 'Go/*/*'
     paths-ignore:
       - 'Makefile'
       - 'go.mod'

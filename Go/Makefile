@@ -1,4 +1,4 @@
-.PHONY: datatype contianer operator controlflow function
+.PHONY: datatype contianer operator controlflow function closures pointer
 
 datatype:
 	go run ./datatype/main.go
@@ -13,4 +13,10 @@ controlflow:
 	go run ./controlflow/main.go
 
 function:
-	go run ./function/main.go
+	go run ./Function/main.go
+
+closures:
+	go run ./Closures/main.go
+
+pointer:
+	go run ./Pointer/main.go
