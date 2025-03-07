@@ -1,4 +1,4 @@
-.PHONY: datatype contianer operator controlflow function closures pointer
+.PHONY: datatype contianer operator controlflow function closures pointer time
 
 datatype:
 	go run ./datatype/main.go
@@ -20,3 +20,6 @@ closures:
 
 pointer:
 	go run ./Pointer/main.go
+
+time:
+	go run ./Time/main.go
