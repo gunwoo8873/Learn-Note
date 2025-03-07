@@ -1,10 +1,32 @@
-.PHONY: datatype contianer operator controlflow function closures pointer time
+.PHONY: \
+	datatype \ 
+	array \
+	linked \
+	collecter \
+	map \
+	operator \
+	controlflow \
+	function \
+	closures \
+	pointer \
+	time \
 
 datatype:
-	go run ./datatype/main.go
+	go	run ./datatype/main.go
 
-container:
-	go run ./container/main.go
+#########################################################
+array:
+	go run ./Container/Array/main.go
+
+linked:
+	go run ./Container/Linked/main.go
+
+collecter:
+	go run ./Container/Collecter/main.go
+
+map:
+	go run ./Container/Map/main.go
+#########################################################
 
 operator:
 	go run ./operator/main.go
