@@ -1,12 +1,8 @@
 .PHONY: \
-	datatype \ 
+	operator datatype pointer \
+	closures vaiabic \
 	array linked collecter map \
 	if for case \
-	operator \
-	controlflow \
-	function \
-	closures \
-	pointer \
 	time \
 
 datatype:
@@ -15,8 +11,13 @@ datatype:
 operator:
 	go run ./operator/main.go
 
-function:
-	go run ./Function/main.go
+# Function
+closures:
+	go run ./Closures/main.go
+
+vaiabic:
+	go run ./Function/Vaiabic/main.go
+#########################################################
 
 #Container
 array:
@@ -43,11 +44,8 @@ for:
 	go run ./Controlflow/For/main.go
 
 case:
-	go run ./Controlflow/Case/main.go
+	go run ./Controlflow/Case_Goto/main.go
 #########################################################
-
-closures:
-	go run ./Closures/main.go
 
 # Time
 time:
