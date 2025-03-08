@@ -1,9 +1,7 @@
 .PHONY: \
 	datatype \ 
-	array \
-	linked \
-	collecter \
-	map \
+	array linked collecter map \
+	if for \
 	operator \
 	controlflow \
 	function \
@@ -13,6 +11,12 @@
 
 datatype:
 	go	run ./datatype/main.go
+
+operator:
+	go run ./operator/main.go
+
+function:
+	go run ./Function/main.go
 
 #Container
 array:
@@ -28,20 +32,21 @@ map:
 	go run ./Container/Map/main.go
 #########################################################
 
-operator:
-	go run ./operator/main.go
+pointer:
+	go run ./Pointer/main.go
 
-controlflow:
-	go run ./controlflow/main.go
+# Controlflow
+if:
+	go run ./Controlflow/If/main.go
 
-function:
-	go run ./Function/main.go
+for:
+	go run ./Controlflow/For/main.go
+#########################################################
 
 closures:
 	go run ./Closures/main.go
 
-pointer:
-	go run ./Pointer/main.go
-
+# Time
 time:
 	go run ./Time/main.go
+#########################################################
