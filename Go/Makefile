@@ -2,6 +2,7 @@
 	operator datatype pointer \
 	closures vaiabic \
 	array linked collecter map \
+	io \
 	if for case \
 	time \
 
@@ -45,6 +46,11 @@ for:
 
 case:
 	go run ./Controlflow/Case_Goto/main.go
+#########################################################
+
+# IO
+io:
+	go run ./Interface/IO/main.go
 #########################################################
 
 # Time
