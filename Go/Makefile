@@ -1,7 +1,7 @@
 .PHONY: \
 	datatype \ 
 	array linked collecter map \
-	if for \
+	if for case \
 	operator \
 	controlflow \
 	function \
@@ -41,6 +41,9 @@ if:
 
 for:
 	go run ./Controlflow/For/main.go
+
+case:
+	go run ./Controlflow/Case/main.go
 #########################################################
 
 closures:
