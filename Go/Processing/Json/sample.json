@@ -1,0 +1,14 @@
+{
+  "router": [
+    {
+      "hostname" : "github.com/gunwoo8873",
+      "ip" : "192.168.0.1",
+      "asn" : 64512
+    },
+    {
+      "hostname" : "github.com/gunwoo8873",
+      "ip" : "192.168.0.2",
+      "asn" : 64512
+    }
+  ]
+}
