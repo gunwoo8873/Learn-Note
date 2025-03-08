@@ -18,12 +18,6 @@
 |             |    Slice    | [Slice dir](./Go/Container/Slice/main.go) |
 |             |     Map     | [Map dir](./Go/Container/Map/main.go)     |
 
-
-### Run makefile
-```bash
-make [target]
-```
-
 ### Run go file
 ```bash
 go run [target]
