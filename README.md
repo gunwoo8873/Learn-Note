@@ -1,24 +1,42 @@
-# I`m Studying for Learning
+# Golang study note
+- [Golang study note](./README.md)
+- [Information](#learn-note-information)
+- [Golang file directory](#golang-file-directory)
 
-## 1. Object
-| N    | Name                                     |
-| :--- | :--------------------------------------- |
-| 1    | [Rust](./Rust/)                          |
-| 2    | [Go](./Go/)                              |
-| 3    | [C#](./C#/)                              |
-| 4    | [EN](./English.md)                       |
-| 5    | [QA Test](./QA-Engineer/) [Stop]         |
-| 6    | [Batch](./Batch/) [Stop]                 |
-| 7    | [PowerShell](./PowerShell/)              |
-| 8    | [Shell](./Shell/)                        |
-| 9    | [Certification](./Certification/) [Stop] |
-| 10   | [Linux System](./Linux/)                 |
+## Study note information
+- Current use Golang Version : [1.24.0](https://go.dev/dl/)
+- Current use IDE : [VSCode](https://code.visualstudio.com/Download), [Trae](https://www.trae.ai/)
+- Current use Terminal : [Warp](https://www.warp.dev/download)
 
-## 2. Issue
-* `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
-* `24-12-05` 까지 입사 오퍼 불합격 대비 및 언어 학습 시작 [`C++ -> Rust + C++`]
-* `24-12-04` MS Conference Week Cancle
-* `24-12-17` Ngle 면접 결과 대기 및 언어 공부 순위 설정 [`1. Rust 2. Go 3. C++ 4. C#`]
-* `24-12-19` Conference Dir Remove
-* `25-01-27` Linux system and go language learning
-* `25-02-04` Likelion 인턴쉽 합류 end time `25-02-27`
+### Golang file directory
+
+| Category    |  Subcategory  | DIRECTORY                                                          |
+| ----------- | :-----------: | ------------------------------------------------------------------ |
+| Datatype    |               | [./Datatype/main.go](./Datatype/main.go)                           |
+| Operator    |               | [./Operator/main.go](./Operator/main.go)                           |
+| Pointer     |               | [./Pointer/main.go](./Pointer/main.go)                             |
+| Function    |               |                                                                    |
+|             |   Closured    | [./Function/Closures/main.go](./Function/Closures/main.go)         |
+|             |    Vaiabic    | [./Function/Vaiabic/main.go](./Function/Vaiabic/main.go)           |
+| Interface   |               |                                                                    |
+|             |      IO       | [./Interface/IO/main.go](./Interface/IO/main.go)                   |
+| Controlflow |               |                                                                    |
+|             |      If       | [./Controlflow/If/main.go](./Controlflow/If/main.go)               |
+|             |      For      | [./Controlflow/For/main.go](./Controlflow/For/main.go)             |
+|             |  Case / Goto  | [./Controlflow/Case_Goto/main.go](./Controlflow/Case_Goto/main.go) |
+| Container   |               |                                                                    |
+|             |     Array     | [./Container/Array/main.go](./Container/Array/main.go)             |
+|             |   Collecter   | [./Container/Collecter/main.go](./Container/Collecter/main.go)     |
+|             |    Linked     | [./Container/Linked/main.go](./Container/Linked/main.go)           |
+|             |      Map      | [./Container/Map/main.go](./Container/Map/main.go)                 |
+| Processing  |               |                                                                    |
+|             | JSON Encoding | [./Processing/Json/main.go](./Processing/Json/main.go)             |
+|             | Yaml Encoding | [./Processing/Yaml/main.go](./Processing/Yaml/main.go)             |
+| HTTP        |               |                                                                    |
+|             |   WebServer   | [./HTTP/WebServer/main.go](./HTTP/WebServer/main.go)               |
+|             |  ReturnValue  | [./HTTP/ReturnValue/main.go](./HTTP/ReturnValue/main.go)           |
+
+### Run go file
+```bash
+go run [target]
+```
