@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+var start = time.Now()
 
 func intSeq() func() int {
 	i := 0
@@ -19,4 +24,7 @@ func main() {
 
 	newInts := intSeq()
 	fmt.Println(newInts())
+
+	compile_time := time.Since(start)
+	fmt.Printf("Compile time: %s \n", compile_time)
 }

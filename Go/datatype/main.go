@@ -3,7 +3,10 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
+
+var start = time.Now()
 
 // golan is integer and uinteger do have't 128bit type
 type Integer struct {
@@ -222,4 +225,7 @@ func main() {
 
 	Float_32()
 	Float_64()
+
+	compile_time := time.Since(start)
+	fmt.Printf("Compile time: %s \n", compile_time)
 }

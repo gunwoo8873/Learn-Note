@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+var start = time.Now()
 
 func main() {
 	var a = make([]int, 30) // 30만큼 Slice 생성
@@ -11,4 +16,7 @@ func main() {
 	}
 
 	fmt.Println(a)
+
+	compile_time := time.Since(start)
+	fmt.Printf("Compile time: %s \n", compile_time)
 }

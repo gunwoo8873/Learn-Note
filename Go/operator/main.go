@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+var start = time.Now()
 
 func tcpheader_example() {
 	var headerWords uint8 = 5         // Header length is 5 words
@@ -77,4 +82,7 @@ func main() {
 	arithmetic()
 	logical()
 	comparison()
+
+	compile_time := time.Since(start)
+	fmt.Printf("Compile time: %s \n", compile_time)
 }
