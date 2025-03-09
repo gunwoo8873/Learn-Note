@@ -12,7 +12,7 @@
 
 | Category    |  Subcategory  | DIRECTORY                                                          |
 | ----------- | :-----------: | ------------------------------------------------------------------ |
-| Datatype    |               | [./Go/Datatype/main.go](./Go/Datatype/main.go)                     |
+| Datatype    |               | [./Go/Datatype/main.go](Go/Datatype/main.go)                     |
 | Operator    |               | [./Go/Operator/main.go](./Go/Operator/main.go)                     |
 | Pointer     |               | [./Go/Pointer/main.go](./Go/Pointer/main.go)                       |
 | Function    |               |                                                                    |
