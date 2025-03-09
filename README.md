@@ -1,47 +1,40 @@
-# Golang study note
+# I`m Language and Script study note
 
-- [Golang study note](./README.md)
-- [Information](#learn-note-information)
-- [Golang file directory](#golang-file-directory)
+## Branches
+- `linux`
+  ```bash
+  git clone -b linux https://github.com/gunwoo8873/Learn-Note.git
+  ```
+- `golang`
+  ```bash
+  git clone -b golang https://github.com/gunwoo8873/Learn-Note.git
+  ```
+- `rust`
+  ```bash
+  git clone -b rust https://github.com/gunwoo8873/Learn-Note.git
+  ```
 
-## Study note information
+##
 
-- Current use Golang Version : [1.24.0](https://go.dev/dl/)
-- Current use IDE : [VSCode](https://code.visualstudio.com/Download), [Trae](https://www.trae.ai/)
-- Current use Terminal : [Warp](https://www.warp.dev/download)
+## 1. Object
+| N    | Name                                     |
+| :--- | :--------------------------------------- |
+| 1    | [Rust](./Rust/)                          |
+| 2    | [Go](./Go/)                              |
+| 3    | [C#](./C#/)                              |
+| 4    | [EN](./English.md)                       |
+| 5    | [QA Test](./QA-Engineer/) [Stop]         |
+| 6    | [Batch](./Batch/) [Stop]                 |
+| 7    | [PowerShell](./PowerShell/)              |
+| 8    | [Shell](./Shell/)                        |
+| 9    | [Certification](./Certification/) [Stop] |
+| 10   | [Linux System](./Linux/)                 |
 
-### Golang file directory
-
-| Category    |  Subcategory  | DIRECTORY                                                                |
-| ----------- | :-----------: | ------------------------------------------------------------------------ |
-| Datatype    |               | [./Go/Datatype/main.go](./Go/Datatype/main.go)                           |
-| Operator    |               | [./Go/Operator/main.go](./Go/Operator/main.go)                           |
-| Pointer     |               | [./Go/Pointer/main.go](./Go/Pointer/main.go)                             |
-| Function    |               |                                                                          |
-|             |   Closured    | [./Go/Function/Closures/main.go](./Go/Function/Closures/main.go)         |
-|             |    Vaiabic    | [./Go/Function/Vaiabic/main.go](./Go/Function/Vaiabic/main.go)           |
-| Interface   |               |                                                                          |
-|             |      IO       | [./Go/Interface/IO/main.go](./Go/Interface/IO/main.go)                   |
-| Controlflow |               |                                                                          |
-|             |      If       | [./Go/Controlflow/If/main.go](./Go/Controlflow/If/main.go)               |
-|             |      For      | [./Go/Controlflow/For/main.go](./Go/Controlflow/For/main.go)             |
-|             |  Case / Goto  | [./Go/Controlflow/Case_Goto/main.go](./Go/Controlflow/Case_Goto/main.go) |
-| Container   |               |                                                                          |
-|             |     Array     | [./Go/Container/Array/main.go](./Go/Container/Array/main.go)             |
-|             |   Collecter   | [./Go/Container/Collecter/main.go](./Go/Container/Collecter/main.go)     |
-|             |    Linked     | [./Go/Container/Linked/main.go](./Go/Container/Linked/main.go)           |
-|             |      Map      | [./Go/Container/Map/main.go](./Go/Container/Map/main.go)                 |
-| Processing  |               |                                                                          |
-|             | JSON Encoding | [./Go/Processing/Json/main.go](./Go/Processing/Json/main.go)             |
-|             | Yaml Encoding | [./Go/Processing/Yaml/main.go](./Go/Processing/Yaml/main.go)             |
-| HTTP        |               |                                                                          |
-|             |   WebServer   | [./Go/HTTP/WebServer/main.go](./Go/HTTP/WebServer/main.go)               |
-|             |  ReturnValue  | [./Go/HTTP/ReturnValue/main.go](./Go/HTTP/ReturnValue/main.go)           |
-| Goroutines  |               | [./Go/Goroutines/main.go](./Go/Goroutines/main.go)                       |
-| Channels    |               | [./Go/Channels/main.go](./Go/Channels/main.go)                           |
-
-
-### Run go file
-```bash
-go run [target]
-```
+## 2. Issue
+* `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
+* `24-12-05` 까지 입사 오퍼 불합격 대비 및 언어 학습 시작 [`C++ -> Rust + C++`]
+* `24-12-04` MS Conference Week Cancle
+* `24-12-17` Ngle 면접 결과 대기 및 언어 공부 순위 설정 [`1. Rust 2. Go 3. C++ 4. C#`]
+* `24-12-19` Conference Dir Remove
+* `25-01-27` Linux system and go language learning
+* `25-02-04` Likelion 인턴쉽 합류 end time `25-02-27`
