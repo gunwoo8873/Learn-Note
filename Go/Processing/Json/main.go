@@ -23,8 +23,9 @@ func Encoding() {
 		return
 	}
 
-	defer file.Close()
-	d := json.NewDecoder(file)
+	defer file.Close() // defer is Encoding process end to file.Cloase function call
+
+	d := json.NewDecoder(file) // File input stream to use streaming JSON parser
 
 	var inv Inventory
 	err = d.Decode(&inv)
