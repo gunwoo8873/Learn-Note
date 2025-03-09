@@ -16,27 +16,27 @@
 | Operator    |               | [./Go/Operator/main.go](./Go/Operator/main.go)                     |
 | Pointer     |               | [./Go/Pointer/main.go](./Go/Pointer/main.go)                       |
 | Function    |               |                                                                    |
-|             |   Closured    | [./Function/Closures/main.go](./Function/Closures/main.go)         |
-|             |    Vaiabic    | [./Function/Vaiabic/main.go](./Function/Vaiabic/main.go)           |
+|             |   Closured    | [./Function/Closures/main.go](./Go/Function/Closures/main.go)         |
+|             |    Vaiabic    | [./Function/Vaiabic/main.go](./Go/Function/Vaiabic/main.go)           |
 | Interface   |               |                                                                    |
-|             |      IO       | [./Interface/IO/main.go](./Interface/IO/main.go)                   |
+|             |      IO       | [./Interface/IO/main.go](./Go/Interface/IO/main.go)                   |
 | Controlflow |               |                                                                    |
-|             |      If       | [./Controlflow/If/main.go](./Controlflow/If/main.go)               |
-|             |      For      | [./Controlflow/For/main.go](./Controlflow/For/main.go)             |
-|             |  Case / Goto  | [./Controlflow/Case_Goto/main.go](./Controlflow/Case_Goto/main.go) |
+|             |      If       | [./Controlflow/If/main.go](./Go/Controlflow/If/main.go)               |
+|             |      For      | [./Controlflow/For/main.go](./Go/Controlflow/For/main.go)             |
+|             |  Case / Goto  | [./Controlflow/Case_Goto/main.go](./Go/Controlflow/Case_Goto/main.go) |
 | Container   |               |                                                                    |
-|             |     Array     | [./Container/Array/main.go](./Container/Array/main.go)             |
-|             |   Collecter   | [./Container/Collecter/main.go](./Container/Collecter/main.go)     |
-|             |    Linked     | [./Container/Linked/main.go](./Container/Linked/main.go)           |
-|             |      Map      | [./Container/Map/main.go](./Container/Map/main.go)                 |
+|             |     Array     | [./Container/Array/main.go](./Go/Container/Array/main.go)             |
+|             |   Collecter   | [./Container/Collecter/main.go](./Go/Container/Collecter/main.go)     |
+|             |    Linked     | [./Container/Linked/main.go](./Go/Container/Linked/main.go)           |
+|             |      Map      | [./Container/Map/main.go](./Go/Container/Map/main.go)                 |
 | Processing  |               |                                                                    |
-|             | JSON Encoding | [./Processing/Json/main.go](./Processing/Json/main.go)             |
-|             | Yaml Encoding | [./Processing/Yaml/main.go](./Processing/Yaml/main.go)             |
+|             | JSON Encoding | [./Processing/Json/main.go](./Go/Processing/Json/main.go)             |
+|             | Yaml Encoding | [./Processing/Yaml/main.go](./Go/Processing/Yaml/main.go)             |
 | HTTP        |               |                                                                    |
-|             |   WebServer   | [./HTTP/WebServer/main.go](./HTTP/WebServer/main.go)               |
-|             |  ReturnValue  | [./HTTP/ReturnValue/main.go](./HTTP/ReturnValue/main.go)           |
-| Goroutines  |               | [./Goroutines/main.go](./Goroutines/main.go)                       |
-| Channels    |               | [./Channels/main.go](./Channels/main.go)                           |
+|             |   WebServer   | [./HTTP/WebServer/main.go](./Go/HTTP/WebServer/main.go)               |
+|             |  ReturnValue  | [./HTTP/ReturnValue/main.go](./Go/HTTP/ReturnValue/main.go)           |
+| Goroutines  |               | [./Goroutines/main.go](./Go/Goroutines/main.go)                       |
+| Channels    |               | [./Channels/main.go](./Go/Channels/main.go)                           |
 
 
 ### Run go file
