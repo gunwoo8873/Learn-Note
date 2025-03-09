@@ -13,7 +13,20 @@ func createMap() {
 	Map["user2"] = "user2.github.com"
 
 	for key, value := range Map {
-		fmt.Printf("Static Map length: %d, Key: %v, Value: %v\n", len(Map), key, value)
+		fmt.Printf("Static Map Key: %v, Value: %v\n", key, value)
+	}
+}
+
+func updateMap() {
+	var Map = map[string]string{
+		"user1.linkdin.com": "127.0.0.1/3000",
+	}
+
+	newMap := Map
+	newMap["user2.linkdin.com"] = "127.0.0.1/3001"
+
+	for key, value := range Map {
+		fmt.Printf("Update Map Key: %v, Value: %v\n", key, value)
 	}
 }
 
@@ -21,9 +34,6 @@ func deleteMap() {
 	var Map = map[string]string{
 		"user1.github.com": "192.168.33.15/3000",
 		"user2.github.com": "192.168.33.16/3001",
-	}
-	for key, value := range Map {
-		fmt.Printf("Static Map Key: %v, Value: %v\n", key, value)
 	}
 
 	var deleteUser = "user1.github.com"
@@ -39,6 +49,7 @@ func deleteMap() {
 
 func main() {
 	createMap()
+	updateMap()
 	deleteMap()
 
 	compile_time := time.Since(start)
