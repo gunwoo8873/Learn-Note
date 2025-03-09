@@ -35,6 +35,9 @@
 | HTTP        |               |                                                                    |
 |             |   WebServer   | [./HTTP/WebServer/main.go](./HTTP/WebServer/main.go)               |
 |             |  ReturnValue  | [./HTTP/ReturnValue/main.go](./HTTP/ReturnValue/main.go)           |
+| Goroutines  |               | [./Goroutines/main.go](./Goroutines/main.go)                       |
+| Channels    |               | [./Channels/main.go](./Channels/main.go)                           |
+
 
 ### Run go file
 ```bash
