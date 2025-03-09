@@ -13,8 +13,7 @@ import "fmt"
 
 type SingleNode[T any] struct {
 	next *SingleNode[T] // Signle Linked List
-	// prev *Node[T] // Double Linked List
-	val T
+	val  T
 }
 
 func Apped[T any](node *SingleNode[T], next *SingleNode[T]) *SingleNode[T] {

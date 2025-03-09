@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 ////////////////////////////////////////////////////////////////////////////////
 // 연속 메모리 [한번에 메모리 할당과 해제를 수행]
@@ -10,14 +13,50 @@ import "fmt"
 // 요소가 사라질 때마다 GC 되지 않는다
 ////////////////////////////////////////////////////////////////////////////////
 
+var start = time.Now()
+
+func staticArray() {
+	var arr_type_a = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Printf("Nomal array type a: %d, %d %v\n", len(arr_type_a), cap(arr_type_a), arr_type_a)
+
+	var arr_type_b = [...]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Printf("Nomal array type b: %d, %d %v\n", len(arr_type_b), cap(arr_type_b), arr_type_b)
+
+	var arr_type_c = []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Printf("Nomal array type c: %d, %d %v\n", len(arr_type_c), cap(arr_type_c), arr_type_c)
+}
+
+func emptyArray() {
+	var empty_arr = []int{} // Non initialize array length 0
+	fmt.Printf("Empty array: %d, %d %v\n", len(empty_arr), cap(empty_arr), empty_arr)
+}
+
+func copyArray() {
+	var base_arr = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var copy_arr [10]int
+
+	copy(copy_arr[0:], base_arr[0:5]) // Copy from Base array in the index copy 0 to 5
+	copy_arr[5] = 100                 // Change copy array index length 5 to value 100
+	copy(copy_arr[6:], base_arr[5:])  // Copy from Base array index length 5 to end
+
+	fmt.Printf("Base array: %d, %d %v\n", len(base_arr), cap(base_arr), base_arr)
+	fmt.Printf("Copy array: %d, %d %v\n", len(copy_arr), cap(copy_arr), copy_arr)
+}
+
+func dynamicArray() {
+	var create_arr = make([]int, 10, 15) // Create array length 10, capacity 15
+	fmt.Printf("Create array: %d, %d %v\n", len(create_arr), cap(create_arr), create_arr)
+
+	var add_arr = append(create_arr, 1, 2, 3, 4, 5, 6)
+	fmt.Printf("Add array: %d, %d %v\n", len(add_arr), cap(add_arr), add_arr)
+}
+
 func main() {
-	var a [10]int = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-	var b [11]int
+	staticArray()
+	emptyArray()
+	copyArray()
+	dynamicArray()
 
-	copy(b[0:], a[0:5]) // A의 배열에서 0부터 5까지 복사를 b의 배열로 복사
-	b[5] = 100          // b의 5번째 인덱스에 100을 저장
-	copy(b[6:], a[5:])  // A의 배열에서 5번째 부터 마지막의 인덱스를 b의 6번째 배열부터 인덱스를 복사
-
-	fmt.Println(a)
-	fmt.Println(b)
+	compile_time := time.Since(start)
+	fmt.Printf("Compile time: %s \n", compile_time)
 }
