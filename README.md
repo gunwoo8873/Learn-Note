@@ -12,9 +12,9 @@
 
 | Category    |  Subcategory  | DIRECTORY                                                          |
 | ----------- | :-----------: | ------------------------------------------------------------------ |
-| Datatype    |               | [./Datatype/main.go](./Datatype/main.go)                           |
-| Operator    |               | [./Operator/main.go](./Operator/main.go)                           |
-| Pointer     |               | [./Pointer/main.go](./Pointer/main.go)                             |
+| Datatype    |               | [./Go/Datatype/main.go](./Go/Datatype/main.go)                     |
+| Operator    |               | [./Go/Operator/main.go](./Go/Operator/main.go)                     |
+| Pointer     |               | [./Go/Pointer/main.go](./Go/Pointer/main.go)                       |
 | Function    |               |                                                                    |
 |             |   Closured    | [./Function/Closures/main.go](./Function/Closures/main.go)         |
 |             |    Vaiabic    | [./Function/Vaiabic/main.go](./Function/Vaiabic/main.go)           |
