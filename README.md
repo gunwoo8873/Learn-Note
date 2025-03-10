@@ -21,12 +21,11 @@
 | 2    | [Go](./Go/)                              |
 | 3    | [C#](./C#/)                              |
 | 4    | [EN](./English.md)                       |
-| 5    | [QA Test](./QA-Engineer/) [Stop]         |
-| 6    | [Batch](./Batch/) [Stop]                 |
-| 7    | [PowerShell](./PowerShell/)              |
-| 8    | [Shell](./Shell/)                        |
-| 9    | [Certification](./Certification/) [Stop] |
-| 10   | [Linux System](./Linux/)                 |
+| 5    | [Batch](./Batch/) [Stop]                 |
+| 6    | [PowerShell](./PowerShell/)              |
+| 7    | [Shell](./Shell/)                        |
+| 8    | [Certification](./Certification/) [Stop] |
+| 9    | [Linux System](./Linux/)                 |
 
 ## 2. Issue
 * `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
