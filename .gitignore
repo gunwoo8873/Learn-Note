@@ -4,8 +4,8 @@
 Learning.sln
 
 # C#
-/CS/bin
-/CS/obj
+/CS/**/bin
+/CS/**/obj
 
 # C++
 /CPP/*.exe
