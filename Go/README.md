@@ -4,6 +4,7 @@
 
 | Category    | Subcategory | DIRECTORY                                                          |
 | ----------- | :---------: | ------------------------------------------------------------------ |
+| fmt         |             | [./fmt/main.go](./fmt/main.go)                                     |
 | Datatype    |             | [./Datatype/main.go](./Datatype/main.go)                           |
 | Operator    |             | [./Operator/main.go](./Operator/main.go)                           |
 | Pointer     |             | [./Pointer/main.go](./Pointer/main.go)                             |
