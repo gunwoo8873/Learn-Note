@@ -49,9 +49,9 @@ func arithmetic() {
 func logical() {
 	var a, b int = 4, 8
 
-	and := a & b
-	or := a | b
-	xor := a ^ b
+	and := a & b // 1 & 1 = 1, 0 & 1 = 0
+	or := a | b  // 1 | 1 = 1, 0 | 1 = 1, 0 | 0 = 0
+	xor := a ^ b // 1 ^ 1 = 0, 0 ^ 1 = 1, 0 ^ 0 = 0
 	not := ^a
 
 	fmt.Printf(
@@ -73,12 +73,17 @@ func logical() {
 }
 
 func comparison() {
-	var a, b int = 4, 2
+	var a int8 = 4
 
-	left_shift := a << b
-	right_shift := a >> b
+	a_left_shift := a << 2
+	a_right_shift := a >> 2
+	fmt.Printf("[8]Bit Left Shift: %08b\n[8]Right Shift: %08b\n", a_left_shift, a_right_shift)
 
-	fmt.Printf("Left Shift: %d\nRight Shift: %d\n", left_shift, right_shift)
+	var b int8 = 64
+
+	b_left_shift := b << 2
+	b_right_shift := b >> 2
+	fmt.Printf("[64]Bit Left Shift: %08b\n[64]Right Shift: %08b\n", b_left_shift, b_right_shift)
 }
 
 func main() {
