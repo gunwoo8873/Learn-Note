@@ -40,7 +40,10 @@ func arithmetic() {
 	quotient := a / b
 	remainder := a % b
 
-	fmt.Printf("Sum: %d, Difference: %d, Product: %d, Quotient: %d, Remainder: %d\n", sum, diff, product, quotient, remainder)
+	fmt.Printf(
+		"Sum: %d\nDifference: %d\nProduct: %d\nQuotient: %d\nRemainder: %d\n",
+		sum, diff, product, quotient, remainder,
+	)
 }
 
 func logical() {
@@ -51,7 +54,10 @@ func logical() {
 	xor := a ^ b
 	not := ^a
 
-	fmt.Printf("And: %d, Or: %d, Xor: %d, Not: %d\n", and, or, xor, not)
+	fmt.Printf(
+		"And: %d, Or: %d, Xor: %d, Not: %d\n",
+		and, or, xor, not,
+	)
 
 	equal := a == b
 	notEqual := a != b
@@ -60,7 +66,10 @@ func logical() {
 	greaterThan := a > b
 	greaterThanEqual := a >= b
 
-	fmt.Printf("Equal: %t, Not Equal: %t, Less Than: %t, Less Than Equal: %t, Greater Than: %t, Greater Than Equal: %t\n", equal, notEqual, lessThan, lessThanEqual, greaterThan, greaterThanEqual)
+	fmt.Printf(
+		"Equal: %t\nNot Equal: %t\nLess Than: %t\nLess Than Equal: %t\nGreater Than: %t\nGreater Than Equal: %t\n",
+		equal, notEqual, lessThan, lessThanEqual, greaterThan, greaterThanEqual,
+	)
 }
 
 func comparison() {
@@ -69,7 +78,7 @@ func comparison() {
 	left_shift := a << b
 	right_shift := a >> b
 
-	fmt.Printf("Left Shift: %d, Right Shift: %d\n", left_shift, right_shift)
+	fmt.Printf("Left Shift: %d\nRight Shift: %d\n", left_shift, right_shift)
 }
 
 func main() {
