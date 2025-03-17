@@ -5,10 +5,14 @@
 | Category    | Subcategory | DIRECTORY                                                          |
 | ----------- | :---------: | ------------------------------------------------------------------ |
 | fmt         |             | [./fmt/main.go](./fmt/main.go)                                     |
+| Variable    |             |                                                                    |
+|             |    Iota     | [./Variable/Iota/main.go](./Variable/Iota/main.go)                 |
 | Datatype    |             | [./Datatype/main.go](./Datatype/main.go)                           |
 | Operator    |             | [./Operator/main.go](./Operator/main.go)                           |
 | Pointer     |             | [./Pointer/main.go](./Pointer/main.go)                             |
 | Function    |             |                                                                    |
+|             |  Recursive  | [./Function/Recursive/main.go](./Function/Recursive/main.go)       |
+|             |    Multi    | [./Function/Multi/main.go](./Function/Multi/main.go)               |
 |             |  Closured   | [./Function/Closures/main.go](./Function/Closures/main.go)         |
 |             |   Vaiabic   | [./Function/Vaiabic/main.go](./Function/Vaiabic/main.go)           |
 | Interface   |             |                                                                    |
@@ -22,7 +26,6 @@
 |             |  Collecter  | [./Container/Collecter/main.go](./Container/Collecter/main.go)     |
 |             |   Linked    | [./Container/Linked/main.go](./Container/Linked/main.go)           |
 |             |     Map     | [./Container/Map/main.go](./Container/Map/main.go)                 |
-|             |    Slice    | [./Container/Slice/main.go](./Container/Slice/main.go)             |
 | HTTP        |             |                                                                    |
 |             |  WebServer  | [./HTTP/WebServer/main.go](./HTTP/WebServer/main.go)               |
 |             | ReturnValue | [./HTTP/ReturnValue/main.go](./HTTP/ReturnValue/main.go)           |
