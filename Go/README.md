@@ -19,7 +19,7 @@
 |             |     IO      | [./Interface/IO/main.go](./Interface/IO/main.go)                   |
 | Controlflow |             |                                                                    |
 |             |     If      | [./Controlflow/If/main.go](./Controlflow/If/main.go)               |
-|             |     For     | [./Controlflow/For/main.go](./Controlflow/For/main.go)             |
+|             |   Switch    | [./Controlflow/Switch/main.go](./Controlflow/Switch/main.go)       |
 |             | Case / Goto | [./Controlflow/Case_Goto/main.go](./Controlflow/Case_Goto/main.go) |
 | Container   |             |                                                                    |
 |             |    Array    | [./Container/Array/main.go](./Container/Array/main.go)             |
