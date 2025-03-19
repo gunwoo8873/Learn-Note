@@ -47,7 +47,7 @@ func dynamicArray() {
 	var create_arr = make([]int, 10, 15) // Create array length 10, capacity 15
 	fmt.Printf("Create array: %d, %d %v\n", len(create_arr), cap(create_arr), create_arr)
 
-	var add_arr = append(create_arr, 1, 2, 3, 4, 5, 6)
+	var add_arr = append(create_arr, 1, 2, 3, 4, 5, 6) // Add array index length
 	fmt.Printf("Add array: %d, %d %v\n", len(add_arr), cap(add_arr), add_arr)
 }
 
