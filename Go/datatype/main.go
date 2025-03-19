@@ -189,8 +189,8 @@ func Uinteger_64() {
 // Note : Uinteger datatype allow value is min 0 and max 18446744073709551615[2^64-1] = 8Byte
 
 type Float struct {
-	float32_type float32
-	float64_type float64
+	float32_type float32 // Last digit override
+	float64_type float64 // None last digit override
 }
 
 func Float_32() {
@@ -207,7 +207,22 @@ func Float_64() {
 	fmt.Println("float 64 :", float_64.float64_type)
 }
 
-// That float is digit 0.1234567 however digit 7+ last digit override
+// Note : That float is digit 0.1234567 however digit 7+ last digit override
+
+func StringRune() {
+	str := "String value"
+	runes := []rune(str) // Datatype change to array index value
+
+	fmt.Println(str)
+	fmt.Println(runes) // [83 116 114 105 110 103 32 118 97 108 117 101]
+}
+
+func StringRange() {
+	str := "String value"
+	for _, v := range str {
+		fmt.Printf("Type: %T, Value: %d, String: %c\n", v, v, v)
+	}
+}
 
 func main() {
 	Integer_8()
@@ -222,4 +237,7 @@ func main() {
 
 	Float_32()
 	Float_64()
+
+	StringRune()
+	StringRange()
 }
