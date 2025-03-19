@@ -54,6 +54,7 @@ func main() {
 				fmt.Println("Input value < Random value")
 			} else {
 				fmt.Println("Try input : ", cnt)
+				break
 			}
 
 			cnt++
