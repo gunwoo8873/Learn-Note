@@ -80,6 +80,17 @@ func logical() {
 	///////////////////////////////////////
 }
 
+func stringLogical() {
+	stra := "var"
+	strb := "const"
+	strc := "var"
+
+	fmt.Printf("%s == %s : %v\n", stra, strb, stra == strb)
+	fmt.Printf("%s != %s : %v\n", stra, strb, stra != strb)
+	fmt.Printf("%s == %s : %v\n", stra, strc, stra == strc)
+	fmt.Printf("%s != %s : %v\n", stra, strc, stra != strc)
+}
+
 func comparison() {
 	var a int8 = 4
 
@@ -98,5 +109,6 @@ func main() {
 	tcpheader_example()
 	arithmetic()
 	logical()
+	stringLogical()
 	comparison()
 }

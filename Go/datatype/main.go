@@ -224,6 +224,13 @@ func StringRange() {
 	}
 }
 
+func StringEngraft() {
+	strA := "String Value A"
+	strB := "String Value B"
+	result := strA + " " + strB
+	fmt.Println(result)
+}
+
 func main() {
 	Integer_8()
 	Integer_16()
@@ -240,4 +247,5 @@ func main() {
 
 	StringRune()
 	StringRange()
+	StringEngraft()
 }
