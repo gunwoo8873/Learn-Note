@@ -15,7 +15,7 @@
 * 장점
   * 하나의 인스턴스를 생성하고 해당 인스턴스를 다른 Module들이 공유하여 사용하기 때문에 인스턴스 생성 비용이 감소한다.
 
-* [단점](#signleton-pattern-단점)
+* [단점](#1-3-signleton-pattern-단점)
   * 하나의 인스턴스를 생성하고 사용하는 Module들이 늘어날 수록 의존성이 상승한다.
 
 ### 1-3. Signleton Pattern 단점
