@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Module_A.ixx" />
+    <ClCompile Include="Module_B.ixx" />
     <ClCompile Include="NameSpace.cpp" />
-    <ClCompile Include="Module_B.cpp" />
-    <ClCompile Include="Module_A.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

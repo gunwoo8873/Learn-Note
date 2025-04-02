@@ -24,11 +24,11 @@
     <ClCompile Include="NameSpace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Module_B.cpp">
-      <Filter>Source Files\libray_B</Filter>
-    </ClCompile>
-    <ClCompile Include="Module_A.cpp">
+    <ClCompile Include="Module_A.ixx">
       <Filter>Source Files\libray_A</Filter>
+    </ClCompile>
+    <ClCompile Include="Module_B.ixx">
+      <Filter>Source Files\libray_B</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
