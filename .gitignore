@@ -1,14 +1,22 @@
+# IDE
+**/.vs
+**/.vscode
+**/.idea
+
 # Root
-.vscode
-.idea
 Learning.sln
 
 # C#
-/CS/**/bin
-/CS/**/obj
+**/bin
+**/obj
 
-# C++
-/CPP/*.exe
+# C++ Debug file
+**/x64/
+**/.vs/
+
+**/**.user # User build profile
+**/**.exe
+**/**.pdb
 
 # PowerShell
 /PowerShell/File/*.txt
@@ -16,4 +24,4 @@ Learning.sln
 # Go
 
 # Rust
-/Rust/target
+**/target
