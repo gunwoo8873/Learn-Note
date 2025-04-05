@@ -13,22 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\libray_A">
-      <UniqueIdentifier>{77183c2b-d534-4f56-8586-0cc1b6d9eaa1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\libray_B">
-      <UniqueIdentifier>{5b9d1ecc-d642-46f8-83ed-5661dbec2d1d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="NameSpace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Module_A.ixx">
-      <Filter>Source Files\libray_A</Filter>
-    </ClCompile>
-    <ClCompile Include="Module_B.ixx">
-      <Filter>Source Files\libray_B</Filter>
+    <ClCompile Include="ModuleA.ixx">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
