@@ -2,7 +2,7 @@
 
 ### Golang file directory
 
-| Category    | Subcategory | DIRECTORY                                                          |
+| CATEGORY    | SUBCATEGORY | DIRECTORY                                                          |
 | ----------- | :---------: | ------------------------------------------------------------------ |
 | fmt         |             | [./fmt/main.go](./fmt/main.go)                                     |
 | Variable    |             |                                                                    |
