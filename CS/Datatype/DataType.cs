@@ -130,7 +130,7 @@ namespace IntegerNS {
 // ulong        | 64         | 0                    | 18446744073709551615
 // ------------------------------------------------------------------------
 
-namespace RealNumberNS {
+namespace FloatNS {
   public class FloatClass {
     public static void FloatFN() {
       Console.WriteLine($"{"Float", -15} | {sizeof(float), -10} | {float.MinValue, -30} | {float.MaxValue, -10}");
@@ -149,8 +149,8 @@ namespace RealNumberNS {
     }
   }
 
-  public class RealNumberClass {
-    public static void RealNumberFN() {
+  public class FloatClass {
+    public static void FloatFN() {
       OutputStyle.OutputStyleClass.RealNumberPrintHeader();
       FloatClass.FloatFN();
       DoubleClass.DoubleFN();
@@ -180,6 +180,6 @@ class DatatypeClass {
 
     IntegerNS.IntegerClass.IntegerFN();
 
-    RealNumberNS.RealNumberClass.RealNumberFN();
+    FloatNS.FloatClass.FloatFN();
   }
 }
