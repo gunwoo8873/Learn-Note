@@ -4,11 +4,10 @@
 
 
 ## Path
-
 | CATEGORY     | SUBCATEGORY | PATH                                             |
 | :----------- | :---------- | :----------------------------------------------- |
 | HelloWorld   |             | [HelloWorld File](./HelloWorld/HelloWorld.cs)    |
-| Datatpye     |             | [Datatype File](./Datatype/Program.cs)           |
+| Datatpye     |             | [Datatype File](./Datatype/Datatype.cs)          |
 |              | String      |                                                  |
 |              | Char        |                                                  |
 |              | Integer     |                                                  |
