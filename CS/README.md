@@ -5,6 +5,15 @@
 
 ## Path
 
-| Name     |       Descrption        | Dir                                    |
-| :------- | :---------------------: | :------------------------------------- |
-| Datatpye | Value bit and byte size | [Datatype file](./Datatype/Program.cs) |
+| CATEGORY     | SUBCATEGORY | PATH                                             |
+| :----------- | :---------- | :----------------------------------------------- |
+| HelloWorld   |             | [HelloWorld File](./HelloWorld/HelloWorld.cs)    |
+| Datatpye     |             | [Datatype File](./Datatype/Program.cs)           |
+|              | String      |                                                  |
+|              | Char        |                                                  |
+|              | Integer     |                                                  |
+|              | RealNumber  |                                                  |
+| ControlFlows |             | [ControlFlow File](./Controlflow/Controlflow.cs) |
+|              | IF          |                                                  |
+|              | FOR         |                                                  |
+|              | WHILE       |                                                  |
