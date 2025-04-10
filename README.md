@@ -15,18 +15,17 @@
   ```
 
 ## 1. Object
-| CATEGORY | PATH                                     |
-| :------- | :--------------------------------------- |
-| 1        | [~~Rust~~](./Rust/)                      |
-| 2        | [C#](./CS/)                              |
-| 3        | [Go](./Go/)                              |
-| 4        | [C#](./C#/)                              |
-| 5        | [EN](./English.md)                       |
-| 6        | [Batch](./Batch/) [Stop]                 |
-| 7        | [PowerShell](./PowerShell/)              |
-| 8        | [Shell](./Shell/)                        |
-| 9        | [Certification](./Certification/) [Stop] |
-| 10       | [Linux System](./Linux/)                 |
+| CATEGORY | PATH                              | STATUS   |
+| :------- | :-------------------------------- | -------- |
+| Language | [C#](./CS/)                       | Running  |
+| Language | [Go](./Go/)                       | Running  |
+| Script   | [Batch](./Batch/)                 | Stop     |
+| Script   | [PowerShell](./PowerShell/)       | Stop     |
+| Script   | [Shell](./Shell/)                 | Stop     |
+| -        | [Certification](./Certification/) | Stop     |
+| Lanugage | [~~Rust~~](./Rust/)               | Stop     |
+| OS       | [Linux System](./Linux/)          | Complete |
+| Language | [EN](./English.md)                | Complete |
 
 ## 2. Issue
 * `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
