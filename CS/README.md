@@ -1,9 +1,6 @@
 # C# Learn note
 
-## Contents
-
-
-## Path
+## Contents & Path
 | CATEGORY       | SUBCATEGORY | PATH                                             |
 | :------------- | :---------- | :----------------------------------------------- |
 | HelloWorld     |             | [HelloWorld File](./HelloWorld/HelloWorld.cs)    |
