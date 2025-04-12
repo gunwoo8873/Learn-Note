@@ -1,3 +1,5 @@
+# Learn Note Repository
+
 ## 1. Contents
 | CATEGORY | PATH                              | STATUS   |
 | :------- | :-------------------------------- | -------- |
@@ -19,3 +21,4 @@
 * `24-12-19` Conference Dir Remove
 * `25-01-27` Linux system and go language learning
 * `25-02-04` Likelion 인턴쉽 합류 end time `25-02-27`
+* `25-04-01` Programing Language 공부 순위 재설정 [`1. C#, 2. Go`]
