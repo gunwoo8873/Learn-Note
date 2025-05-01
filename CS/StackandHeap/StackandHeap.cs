@@ -8,10 +8,11 @@
     }
   }
 }
-// Boxing은 값 형식 Object 또는 
+// Boxing은 값 형식의 타입을 Object 라는 참조 형식으로 형변환을 시도한다. 사용 목적이 여러 방식으로 존재하며 보통 파라미터로 전달하거나,
+// 기존에 저장된 스택영역에서 Heap영역에 값형식을 저장한다. 
 
 namespace StackNS {
-  public class StackClass {
+  public class StackCS {
     public static void StackFN() {
       int a = 10; // Value type to 4 bytes integer type
       int b;  // Reference type to 8 bytes reference type
@@ -28,7 +29,7 @@ namespace StackNS {
 // 이는 운영 체제와 런타임 환경에 대한 스택 메모리의 시작 위치를 다르게 설정할 수 있다.
 
 namespace HeapNS {
-  public class HeapClass {
+  public class HeapCS {
     int[] heapArr = new int[5];
   }
 }
@@ -38,6 +39,6 @@ namespace HeapNS {
 
 class Compiler {
   public static void Main(string[] args) {
-    StackNS.BoxingClass.StackFN();
+    BoxingNS.BoxingCS.BoxingFN();
   }
 }
