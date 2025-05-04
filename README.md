@@ -22,5 +22,5 @@
 * `25-01-27` Linux system and go language learning
 * `25-02-04` Likelion 인턴쉽 합류 end time `25-02-27`
 * `25-04-01` Programing Language 공부 순위 재설정 [`1. C#, 2. Go`]
-* `25-04-22` 쿠팡풀필먼트서비스 이천 4센터 계약직 입사
-* `26-04-21` 쿠팡풀필먼트서비스 이천 4센터 계약직 퇴사 예정
+* `25-04-22` CFS ECH4 계약직 입사
+* `26-04-21` CFS ECH4 계약직 퇴사 예정
