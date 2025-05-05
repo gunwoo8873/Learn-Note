@@ -2,11 +2,12 @@
 using System.Data;
 using System.Windows;
 
-namespace WPF_App;
+namespace WPF_Freamwork_GUI;
 
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application {
+public partial class App : Application
+{
 }
 
