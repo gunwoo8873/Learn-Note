@@ -9,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Freamwork_GUI;
+namespace GUI;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -19,6 +19,7 @@ public partial class MainWindow : Window {
     InitializeComponent();
   }
 
+  
   private void ElementAdd(object sender, RoutedEventArgs e) {
     // IsNullOrWhiteSpace is ListBox in the input field checking if the input is empty
     // Contains the same name in the ListBox
@@ -30,5 +31,17 @@ public partial class MainWindow : Window {
 
   private void ElementClear(object sender, RoutedEventArgs e) {
     ListNames.Items.Clear();
+  }
+
+  private void NetworkPageLoad(object sender, RoutedEventArgs e) {
+    // Load the network page
+    NetworkPage networkPage = new NetworkPage();
+    MainFrame.Navigate(networkPage);
+  }
+
+  private void OverviewPageLoad(object sender, RoutedEventArgs e) {
+    // Load the overview page
+    OverviewPage overviewPage = new OverviewPage();
+    MainFrame.Navigate(overviewPage);
   }
 }

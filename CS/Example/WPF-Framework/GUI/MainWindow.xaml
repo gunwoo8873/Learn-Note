@@ -1,10 +1,10 @@
 ﻿<Window
-  x:Class="WPF_Freamwork_GUI.MainWindow"
+  x:Class="GUI.MainWindow"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-  xmlns:local="clr-namespace:WPF_Freamwork_GUI"
+  xmlns:local="clr-namespace:GUI"
   mc:Ignorable="d"
   Title="MainWindow" Height="450" Width="800"> <!-- Application main title name and window height and width value -->
 
@@ -18,27 +18,31 @@
 
     <!-- Column layout -->
     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="150" />
+      <ColumnDefinition Width="200" />
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
 
     <!-- Left Element -->
-    <Label Grid.Row="0" Grid.Column="0">Test SideBar</Label>
+    <Label Grid.Row="0" Grid.Column="0">Sidebar Menu</Label>
     <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,0,0,0">
       <!-- ... -->
+      <Button x:Name="OverviewBtn" Margin="0,5,5,0" Click="OverviewPage" Height="100">Overview</Button>
+      <Button x:Name="NetworkBtn" Margin="0,5,5,0" Click="NetworkPage" Height="100">Network</Button>
     </StackPanel>
 
     <!-- Center Element -->
-    <Label Grid.Row="0" Grid.Column="1">Test Center Contents</Label>
+    <Label Grid.Row="0" Grid.Column="1">Center Panel Header</Label>
     <ListBox Grid.Row="1" Grid.Column="1" x:Name="ListNames" />
 
     <!-- Right Element-->
     <StackPanel Grid.Row="1" Grid.Column="2" Margin="5,0,0,0">
-      <!-- Event logic is MainWindow.xaml.cs file to code edit -->
+      <!-- Event handlers for these buttons are implemented in MainWindow.xaml.cs -->
       <TextBox x:Name="InputElement" />
-      <Button x:Name="ListAdd" Margin="0,5,0,0" Click="ElementAdd">Add</Button>
-      <Button x:Name="ListClear" Margin="0,5,0,0" Click="ElementClear">Clear</Button>
+      <Button x:Name="AddToListButton" Margin="0,5,0,0" Click="ElementAdd">Add</Button>
+      <Button x:Name="ClearListButton" Margin="0,5,0,0" Click="ElementClear">Clear</Button>
     </StackPanel>
+
+    <Frame x:Name="MainFrame" Grid.Row="1" Grid.Column="1" NavigationUIVisibility="Hidden" />
   </Grid>
 </Window>

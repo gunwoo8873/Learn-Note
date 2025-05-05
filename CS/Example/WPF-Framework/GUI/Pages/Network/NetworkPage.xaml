@@ -1,0 +1,33 @@
+﻿<Window
+  x:Class="WPF_Framework.Network.NetworkPage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Network"
+  mc:Ignorable="d"
+  Title="Network" Height="450" Width="800"> <!-- Application main title name and window height and width value -->
+
+  <!-- Window InRayout Control -->
+  <Grid Margin="10">
+    <!-- Row layout -->
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <!-- Column layout -->
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="200" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <!-- Left Element -->
+    <Label Grid.Row="0" Grid.Column="0">Sidebar Menu</Label>
+    <StackPanel Grid.Row="1" Grid.Column="0" Margin="5,0,0,0">
+      <Button x:Name="OverviewBtn" Margin="0,5,5,0">Overview</Button>
+      <Button x:Name="NetworkBtn" Margin="0,5,5,0">Network</Button>
+      <Button x:Name="SettingsBtn" Margin="0,5,5,0">Settings</Button>
+    </StackPanel>
+  </Grid>
+</Window>
