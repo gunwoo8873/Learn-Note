@@ -6,7 +6,21 @@
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:local="clr-namespace:WPF_Freamwork_GUI"
   mc:Ignorable="d"
-  Title="MainWindow" Height="450" Width="800"> <!-- Application top title name and window height and width value -->
-  <Grid background="#000000"> <!-- Background color of the window -->
+  Title="MainWindow" Height="450" Width="800"> <!-- Application top main title name and window height and width value -->
+
+  <!-- Application InRayout Control -->
+  <Grid Margin="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <Label Grid.Column="0">Test Contents</Label>
+    <ListBox Grid.Row="1" x:Name="ListNames" />
   </Grid>
 </Window>
