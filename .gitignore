@@ -10,12 +10,15 @@ Learning.sln
 **/bin
 **/obj
 
+# C# WPF
+**/WPF-Freamwork-GUI_qm2nabrw_wpftmp
+
 # C++ Debug file
 **/x64/
 **/.vs/
 
 **/**.user # User build profile
-**/**.exe
+**/** */.exe
 **/**.pdb
 
 # PowerShell
