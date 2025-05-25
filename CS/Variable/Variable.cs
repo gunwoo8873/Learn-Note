@@ -13,3 +13,8 @@ string StrValue;
 StrValue = "Big";
 
 Console.WriteLine(StrValue);
+
+int integerValue = 0; // New variable declared integer type value
+integerValue = 15; // Declared variable value to change new value update
+
+Console.WriteLine(integerValue);
