@@ -258,6 +258,9 @@ Store :
 
 Yield :
 [동] 산출하다, 반환하다, 양도하다
+
+Occurrrence :
+[동] 발생하다
 ```
 
 ## 7. Comunication [24. 12. 19]
