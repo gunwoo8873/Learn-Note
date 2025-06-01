@@ -28,11 +28,12 @@ public class ChagneType
 {
   public static void ChangeTypeFN()
   {
-    int intValue = int.MaxValue;
-    long longValue = intValue;
-    long longUpdateValue = longValue;
-    longUpdateValue = long.MaxValue; // int is changed to long and changed value update for MaxValue
-    Console.WriteLine($"Datatype chagned int : {intValue} -> long : {longUpdateValue}");
+    // Don`t Declaration to Implicit Conversion to need Explicit Conversion.
+    int i = int.MaxValue;
+
+    // Chagned int datatype to long datatype
+    long l = (long)i;
+    Console.WriteLine($"int to long changed datatype : int ({i}) => long ({l})");
   }
 }
 
@@ -40,13 +41,27 @@ public class BooleanType
 {
   public static void BooleanFN()
   {
-    bool bo = true;
-    Console.WriteLine(bo);
+    bool b = true;
+    Console.WriteLine(b);
+  }
+}
 
-    if (bo == true)
-    {
-      Console.WriteLine($"{bo} == true ");
-    }
+public class StringType
+{
+  public static void StringTypeFN()
+  {
+    string s = "Hello Wrold!";
+    /*
+    sizeof keyword is data type size check then only english is
+    not UTF-8 changed encoding however other country language is need to UTF-8 encoding
+    */
+    Console.WriteLine($"String output : {s}, size : {s.Length}");
+  }
+
+  public static void CharTypeFN()
+  {
+    char c = 'a';
+    Console.WriteLine($"Char output : {c}, size : {sizeof(char)}");
   }
 }
 
@@ -56,5 +71,8 @@ class CompilerCS
   {
     IntegerType.IntegerFN();
     ChagneType.ChangeTypeFN();
+
+    StringType.StringTypeFN();
+    StringType.CharTypeFN();
   }
 }
