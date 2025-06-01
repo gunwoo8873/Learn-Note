@@ -19,7 +19,6 @@ public partial class MainWindow : Window {
     InitializeComponent();
   }
 
-  
   private void ElementAdd(object sender, RoutedEventArgs e) {
     // IsNullOrWhiteSpace is ListBox in the input field checking if the input is empty
     // Contains the same name in the ListBox
@@ -33,15 +32,17 @@ public partial class MainWindow : Window {
     ListNames.Items.Clear();
   }
 
-  private void NetworkPageLoad(object sender, RoutedEventArgs e) {
-    // Load the network page
-    NetworkPage networkPage = new NetworkPage();
-    MainFrame.Navigate(networkPage);
-  }
+  // private void NetworkPageLoad(object sender, RoutedEventArgs e) 
+  // {
+  //   // Load the network page
+  //   NetworkPage networkPage = new NetworkPage();
+  //   MainFrame.Navigate(networkPage);
+  // }
 
-  private void OverviewPageLoad(object sender, RoutedEventArgs e) {
-    // Load the overview page
-    OverviewPage overviewPage = new OverviewPage();
-    MainFrame.Navigate(overviewPage);
-  }
+  // private void OverviewPageLoad(object sender, RoutedEventArgs e) 
+  // {
+  //   // Load the overview page
+  //   OverviewPage overviewPage = new OverviewPage();
+  //   MainFrame.Navigate(overviewPage);
+  // }
 }

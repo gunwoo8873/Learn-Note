@@ -2,7 +2,7 @@
   public class BoxingCS {
     public void BoxingFN() {
       int value = 10;
-      object value_box = value;
+      object value_box = value; // Boxing occurrence[발생]
 
       Console.WriteLine("Boxing: " + value_box);
     }
@@ -13,7 +13,8 @@
 
 namespace StackNS {
   public class StackCS {
-    public static void StackFN() {
+    public static void StackFN()
+    {
       int a = 10; // Value type to 4 bytes integer type
       int b;  // Reference type to 8 bytes reference type
       b = 20;
