@@ -1,21 +1,24 @@
-﻿public class SelectAngle
+﻿namespace LogicalNS
 {
-  public static void OpeningAngle()
+  public class LogicalOperator
   {
-    int i = sizeof(int);
-    char c = sizeof(char);
+    public static void OpeningAngle()
+    {
+      int i = sizeof(int);
+      byte b = sizeof(byte);
 
-    bool b = (int)i < (char)c;
-    Console.WriteLine(b);
-  }
+      bool bo = i < b;
+      Console.WriteLine(bo);
+    }
 
-  public static void CloseingAngle()
-  {
-    int i = sizeof(int);
-    char c = sizeof(char);
+    public static void CloseingAngle()
+    {
+      int i = sizeof(int);
+      byte b = sizeof(byte);
 
-    bool b = (i > c);
-    Console.WriteLine(b);
+      bool bo = i > b;
+      Console.WriteLine(bo);
+    }
   }
 }
 
