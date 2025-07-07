@@ -1,7 +1,18 @@
 # AWS 글로벌 구조
 > [AWS Global Infrastructure URL](https://infrastructure.aws/)
 
-## AWS Regions [지역]
+# Contents
+[Regions](#aws-regions-지역)
+  * [Avaliability Zone](#aws-availability-zones--az-가용성-구역)
+  * [Data Centers](-)
+  * [Edge Locations and Pointer of Presence](-)
+[Console](#aws-console)
+[IAM](#aws-identity-and-access-management-iam)
+  * [Permissions](#iam-permissions)
+  * [Policy](#iam-policies-structure)
+[Access Keys](#aws-access-keys)
+
+# AWS Regions [지역]
   - **1. Compilance**
   - **2. Proximity**
   - **3. Available Service**
@@ -22,6 +33,7 @@
 ```
 
 ## AWS Data Centers [데이터 센터]
+
 ## AWS Edge Locations and Points of Presence [에지 위치와 존재 지점]
 
 # AWS Console
@@ -50,7 +62,7 @@
 ## IAM Policies Structure
 * Consists
   - Version : 정책 언어 버전이며 항상 사용되는 데이터는 2012. 10. 17로 기본값으로 설정되어 있다.
-  - Id : 정책 고유 식별자
+  - Id : 정책 고유 식별자 [Optinal / 자동으로 부여되는 것이 아닌 사용자나 혹은 권한 부여자가 직접적인 식별자를 부여]
   - Statement : 한개 이상의 개별 진술[?]
 
 * Statements Consists
@@ -89,3 +101,27 @@
     ]
   }
   ```
+
+# AWS Access Keys
+* AWS Access Options
+  * AWS Management Console [Terminal]
+  * AWS Command Line Interface [CLI : Shell, PowerShell ...etc]
+  * AWS Software Developer Kit [SDK : Go, Rust, Java, .NET, Python ...etc]
+* Access Key는 AWS Console을 통해 생성
+* 사용자들은 자신의 고유 접근 키를 관리
+* Access Key는 비밀번호처럼 암호화 처리와 공유 금지
+
+* Example Access Keys
+  ```pem
+  Access key [ID] : AKIASK253MN2IJ5LNVDY
+  Secret access key [Password] : /JdcMK8uedyhYj9yIUaaW03s***********
+  ```
+
+# AWS Command Line Interface [CLI]
+* Terminal내에서 하나의 Commmand Line형태의 AWS 서비스와 상호 작용할 수 있는 도구
+* 직접적인 공개 API로 AWS Services 연결
+* 스크립트를 통해 리소스를 관리
+* AWS Mangement Console를 사용하는 대체 방안
+
+# AWS Software Developer Kit [SDK]
+* 프로그래밍 언어 기반으로 API 통신
