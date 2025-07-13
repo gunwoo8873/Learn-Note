@@ -23,7 +23,9 @@ public partial class MainWindow : Window {
   private void ElementAdd(object sender, RoutedEventArgs e) {
     // IsNullOrWhiteSpace is ListBox in the input field checking if the input is empty
     // Contains the same name in the ListBox
-    if (!string.IsNullOrWhiteSpace(InputElement.Text) && !ListNames.Items.Contains(InputElement.Text)) {
+
+    if (!string.IsNullOrWhiteSpace(InputElement.Text) && !ListNames.Items.Contains(InputElement.Text))
+    {
       ListNames.Items.Add(InputElement.Text);
       InputElement.Clear();
     }
