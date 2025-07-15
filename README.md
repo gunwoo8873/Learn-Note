@@ -5,13 +5,13 @@
 | :------- | :-------------------------------- | -------- |
 | Language | [C#](./CS/)                       | Running  |
 | Language | [Go](./Go/)                       | Running  |
+| Language | [EN](./English/Note.md)           | Complete |
+| Lanugage | [~~Rust~~](./Rust/)               | Stop     |
 | Script   | [Batch](./Batch/)                 | Stop     |
 | Script   | [PowerShell](./PowerShell/)       | Stop     |
 | Script   | [Shell](./Shell/)                 | Stop     |
 | -        | [Certification](./Certification/) | Stop     |
-| Lanugage | [~~Rust~~](./Rust/)               | Stop     |
 | OS       | [Linux System](./Linux/)          | Complete |
-| Language | [EN](./English/Note.md)           | Complete |
 
 ## 2. Issue History
 * `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
