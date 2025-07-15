@@ -1,27 +1,23 @@
-﻿public class Array
+﻿
+public class Arr
 {
-  public static void CreatedArr()
+  public static void CreateArr()
   {
-    int[] arr = new int[10]; // Create new array element to not have index however heap for memory size is 10 haved
-    Console.WriteLine($"Heap size : {arr.Length} and index check : {arr}"); // The empty is array element output to datatype
-  }
+    int[] products = new int[5];
 
-  public static void AddIndexArr()
-  {
-    int[] arr = new int[5];
-    arr[1] = 15;
-    arr[2] = 30;
-
-    int v = arr[0];
-    Console.WriteLine($"Variable value is : ({v}) and all array element in the index : ");
+    for (int i = 0; i < 5; i++)
+    {
+      products[i] = i;
+      Console.WriteLine(products);
+    }
   }
 }
 
-class CompilerCS
+
+class Program
 {
-  public static void Main(string[] args)
+  static void Main(string[] args)
   {
-    Array.CreatedArr();
-    Array.AddIndexArr();
+    Arr.CreateArr();
   }
 }
