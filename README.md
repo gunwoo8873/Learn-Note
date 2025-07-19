@@ -1,18 +1,18 @@
 # Learn Note Repository
 
 ## 1. Contents
-| CATEGORY      | PATH                              | STATUS   |
-| :------------ | :-------------------------------- | -------- |
-| Language      | [C#](./Dotnet/)                   | Running  |
-| Language      | [Go](./Go/)                       | Running  |
-| Language      | [EN](./English/Note.md)           | Complete |
-| Lanugage      | [~~Rust~~](./Rust/)               | Stop     |
-| Script        | [Batch](./Batch/)            | Stop     |
-| Script        | [PowerShell](./PowerShell/)  | Stop     |
-| Script        | [Shell](./Shell/)            | Stop     |
-| Certification | [SAA](./Certification/SAA)   | Running  |
-| Design        | [Blender](./Blender/2025)    | Running  |
-| OS            | [Linux System](./Linux/)     | Complete |
+| CATEGORY      | PATH                        | STATUS   |
+| :------------ | :-------------------------- | -------- |
+| Language      | [C#](./Dotnet/)             | Running  |
+| Language      | [Go](./Go/)                 | Running  |
+| Language      | [EN](./English/Note.md)     | Complete |
+| Lanugage      | [~~Rust~~](./Rust/)         | Stop     |
+| Script        | [Batch](./Batch/)           | Stop     |
+| Script        | [PowerShell](./PowerShell/) | Stop     |
+| Script        | [Shell](./Shell/)           | Stop     |
+| Certification | [SAA](./Certification/SAA)  | Running  |
+| Design        | [Blender](./Blender/2025)   | Running  |
+| OS            | [Linux System](./Linux/)    | Complete |
 
 ## 2. Issue History
 * `24-11-26` 입사 오퍼 대비 및 주 언어 변경 [`Rust -> C++`]
