@@ -17,7 +17,7 @@ type Inventory struct {
 }
 
 func Encoding() {
-	file, err := os.Open("./Processing/Json/sample.json")
+	file, err := os.Open("./sample.json")
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
