@@ -3,28 +3,16 @@
 **/.vscode
 **/.idea
 
+# Default
+**/obj
+**/bin
+
 # Root
-Learning.sln
 
 # C#
-**/bin
-**/obj
-
-# C# WPF
-**/WPF-Freamwork-GUI_qm2nabrw_wpftmp
 
 # C++ Debug file
-**/x64/
-**/.vs/
-
-**/**.user # User build profile
-**/** */.exe
-**/**.pdb
 
 # PowerShell
-/PowerShell/File/*.txt
 
 # Go
-
-# Rust
-**/target
