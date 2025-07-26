@@ -14,7 +14,7 @@ func constKeyword() {
 	const v string = "This is constant"
 	fmt.Println(v)
 
-	//// constant is one variable to only one value
+	//// [X] constant is one variable to only one value
 	// v = "Error"
 	// fmt.Println(v)
 }
@@ -24,7 +24,7 @@ func shortKeyword() {
 	v := "This is short variable"
 	fmt.Println(v)
 
-	//// Do not equle datatype can't use
+	//// [X] Do not equle datatype can't use
 	// v := 10
 	// fmt.Println(v)
 

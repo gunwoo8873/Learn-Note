@@ -1,3 +1,3 @@
-module variable
+module datatype
 
 go 1.24.5
