@@ -20,6 +20,7 @@ func constKeyword() {
 }
 
 func shortKeyword() {
+	//// ':=' is not use 'var' and datatype but can use short changed
 	v := "This is short variable"
 	fmt.Println(v)
 
