@@ -58,6 +58,10 @@ func main() {
 	fmt.Printf("")  // 'Format'에 맞게 입력값 출력
 	fmt.Print("")   // 함수 입력값 출력
 
+	fmt.Scan("")   // 표준 입력에서 값을 입력받는다
+	fmt.Scanf("")  // 표준 입력에서 서식 형태로 값을 입력받는다
+	fmt.Scanln("") // 표준 입력에서 한 줄을 읽어서 값을 입력받는다
+
 	datatype()
 	boolean()
 	integer()
