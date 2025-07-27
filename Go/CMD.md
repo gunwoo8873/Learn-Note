@@ -14,3 +14,8 @@ go build
 ```ps
 go run [file name or .]
 ```
+
+## AMD64 Chipset use to linux
+```ps
+GOOS=linux GOARCH=amd64 go build
+```
