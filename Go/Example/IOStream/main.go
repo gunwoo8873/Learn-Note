@@ -3,13 +3,25 @@ package main
 import "fmt"
 
 func main() {
-	var x int // x 값을 초기화
-	var y int // y 값을 초기화
+	var a, b, result int
+	var success bool
 
-	n, err := fmt.Scan(&x, &y) // Scan을 사용하여 각 x, y 입력값을 수신
+	n, err := fmt.Scan(&a, &b)
+
 	if err != nil {
-		fmt.Println(n, err)
-	} else {
-		fmt.Println(x, y)
+		fmt.Println(err)
+	} else if (a == 0) && (b == 0) {
+		fmt.Println("Retry input number")
+		fmt.Scan(&a, &b)
+
+		if n == 0 {
+			success = false
+			fmt.Println(success)
+		} else {
+			result = a + b
+			fmt.Println(result)
+			success = true
+			fmt.Println(success)
+		}
 	}
 }
