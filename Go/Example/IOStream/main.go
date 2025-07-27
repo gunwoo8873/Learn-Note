@@ -19,9 +19,8 @@ func main() {
 			fmt.Println(success)
 		} else {
 			result = a + b
-			fmt.Println(result)
 			success = true
-			fmt.Println(success)
+			fmt.Println(result, success)
 		}
 	}
 }
