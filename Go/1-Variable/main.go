@@ -14,17 +14,17 @@ func constKeyword() {
 	const v string = "This is constant"
 	fmt.Println(v)
 
-	//// [X] constant is one variable to only one value
+	//// [X] const는 하나의 값만 활당이 가능하며, 값의 변경이 불가능하다.
 	// v = "Error"
 	// fmt.Println(v)
 }
 
 func shortKeyword() {
-	//// ':=' is not use 'var' and datatype but can use short changed
+	//// ':='는 'var'과 같은 기능을 하며, 데이터 타입에 대한 명시를 생략을 할 수 있다. [단. 변수는 반드시 선언이 되어야 하며, 값이 없는 초기화는 불가능하다.]
 	v := "This is short variable"
 	fmt.Println(v)
 
-	//// [X] Do not equle datatype can't use
+	//// [X] 초기 선언과의 데이터 타입이 다르기 때문에, 재활당이 불가능하다.
 	// v := 10
 	// fmt.Println(v)
 
