@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 //// For 루프 원리
@@ -11,26 +10,19 @@ import (
 // 조건문 생략 [X]
 // 후처리 생략 [O]
 
-func standardLoop() {
-	i := 0
+func main() {
+	var loopNumber int
 
-	//// 일반적인 for 루프
+	fmt.Println("Enter the number of times you want of loop to run :")
+	fmt.Scan(&loopNumber)
+
 	for {
-		time.Sleep(time.Second)
-		fmt.Println(i)
-		i++
+		fmt.Println("Count :", loopNumber)
+		loopNumber--
 
-		if i == 5 {
+		if loopNumber == 0 {
+			fmt.Println("Complete loop")
 			break
 		}
 	}
-
-	//// 순회 루프
-	for i := range 10 {
-		fmt.Print(i)
-	}
-}
-
-func main() {
-	standardLoop()
 }
