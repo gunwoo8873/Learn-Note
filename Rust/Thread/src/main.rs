@@ -1,18 +1,22 @@
 use std::thread;
 
 fn main() {
-  //// 4. Thread fn 호출 후 종료
-  thread::spawn(fn_a);
+  thread_builder();
 
-  //// 1. main fn 안에 존재하는 값 부터 실행
-  println!("Main Thread Task run process");
+  println!("Start Main Thread process");
 }
 
-fn fn_a() {
-  //// 2. Thread ID 1번 생성
-  println!("Fn A Thread Task run process");
+fn info_thread_id() {
+  let thread_id = thread::current().id();
+  println!("Thread ID : {thread_id:?}");
+}
 
-  //// 3. Thread ID 2번 생성
-  let thread_id = thread::current().id(); // Thread ID 식별자 함수
-  println!("Current output Thread id : {thread_id:?}"); // 총 생성된 Thread ID 값을 출력
+fn thread_builder() {
+  for i in 0..=10 {
+    let builder_handle = thread::Builder::new().name("Thread Num {i}".to_string())
+    .spawn(move || {
+      info_thread_id();
+    })
+    .unwrap();
+  }
 }
