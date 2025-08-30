@@ -14,9 +14,8 @@
   - [IAM Permissions](#iam-permissions)
   - [IAM Policies Structure](#iam-policies-structure)
 - [AWS Access Keys](#aws-access-keys)
-- [AWS Command Line Interface \[CLI\]](#aws-command-line-interface-cli)
-- [AWS Software Developer Kit \[SDK\]](#aws-software-developer-kit-sdk)
-  - [SDK](#sdk)
+  - [AWS Command Line Interface \[CLI\]](#aws-command-line-interface-cli)
+  - [AWS Software Developer Kit \[SDK\]](#aws-software-developer-kit-sdk)
 
 # AWS Regions [지역]
   - **1. Compilance**
@@ -125,13 +124,13 @@
   Secret access key [Password] : /JdcMK8uedyhYj9yIUaaW03s***********
   ```
 
-# AWS Command Line Interface [CLI]
+## AWS Command Line Interface [CLI]
 * Terminal내에서 하나의 Commmand Line형태의 AWS 서비스와 상호 작용할 수 있는 도구
 * 직접적인 공개 API로 AWS Services 연결
 * 스크립트를 통해 리소스를 관리
 * AWS Mangement Console를 사용하는 대체 방안
 
-# AWS Software Developer Kit [SDK]
+## AWS Software Developer Kit [SDK]
 * 프로그래밍 언어 기반으로 API 통신
-
-## SDK 
+* AWS 서비스들의 접근 관리 활성화
+* App과 함께 상호작용 활성화
