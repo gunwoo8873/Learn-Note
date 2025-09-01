@@ -16,6 +16,7 @@
 - [AWS Access Keys](#aws-access-keys)
   - [AWS Command Line Interface \[CLI\]](#aws-command-line-interface-cli)
   - [AWS Software Developer Kit \[SDK\]](#aws-software-developer-kit-sdk)
+- [AWS IAM Role for Services](#aws-iam-role-for-services)
 
 # AWS Regions [지역]
   - **1. Compilance**
@@ -97,7 +98,7 @@
       "Resource": "arn:aws:s3:::*"
       },
       {
-        "Sid": "VisualEditor1",
+        "Sid": "VisualEditor1",0
         "Effect": "Allow",
         "Action": [
             "s3:GetObject",
@@ -134,3 +135,7 @@
 * 프로그래밍 언어 기반으로 API 통신
 * AWS 서비스들의 접근 관리 활성화
 * App과 함께 상호작용 활성화
+
+# AWS IAM Role for Services
+* AWS에서 제공하는 서비스 일부는 사용자 대신 작업을 수행
+* 
