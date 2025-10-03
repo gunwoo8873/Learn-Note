@@ -1,30 +1,25 @@
 ﻿using System;
-using System.Net;
 
-class StandardMethods
+
+namespace NamespaceA
 {
-    static void NormalReturnMethod()
+    class Private_Class
     {
         //...
     }
 
-    static int IntegerReturnMethod()
+    public class Public_Class
+    {
+        //...
+    }
+
+    internal class Internal_Class
     {
         //...
     }
 }
 
-
-class AsyncMethods
+namespace NamespaceB
 {
-    // 'string[]'는 매게 변수 타입
-    static async Task AsyncTaskMethod(string[] args)
-    {
-        return await Task.FromResult(args);
-    }
-
-    static async Task<int> IntegerAsyncTaskMethod()
-    {
-        return await Task.FromResult<int>(0);
-    }
+    class Program {}
 }
