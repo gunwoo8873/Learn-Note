@@ -2,6 +2,11 @@
 
 namespace ReservedWordNS
 {
+    public class Container(int v)
+    {
+        private int _i = v;        
+    }
+
     class Program
     {
         static void Main()
@@ -14,9 +19,6 @@ namespace ReservedWordNS
             int i = 100;
             i = 150; // Update and Reference Type
             Console.WriteLine(i);
-
-            string[] CreateStrArr = new string[25];
-            Console.WriteLine(strIndex);
         }
     }
 }
