@@ -98,7 +98,7 @@
       "Resource": "arn:aws:s3:::*"
       },
       {
-        "Sid": "VisualEditor1",0
+        "Sid": "VisualEditor1",
         "Effect": "Allow",
         "Action": [
             "s3:GetObject",

@@ -32,8 +32,11 @@ namespace ArrayNS
             };
 
             //// 가변 배열 = [Column <Mutable>][Row]
-            // int[][] ImmutableArr = new int[10][];
-            // ImmmutableArr[1] = new int[15];
+            int[][] ImmutableArr = new int[4][];
+            ImmmutableArr[0] = new int[4];
+            ImmmutableArr[1] = new int[5];
+            ImmmutableArr[2] = new int[2];
+            ImmmutableArr[3] = new int[3];
         }
     }
 }

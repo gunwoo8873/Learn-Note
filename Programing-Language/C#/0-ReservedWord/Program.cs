@@ -4,7 +4,7 @@ namespace ReservedWordNS
 {
     public class Container(int v)
     {
-        private int _i = v;        
+        private int _i = v;
     }
 
     class Program
